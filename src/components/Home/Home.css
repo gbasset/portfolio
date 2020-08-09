@@ -1,0 +1,31 @@
+.header-home {
+    display: flex;
+    height: 90vh;
+    background-color: #1f2235;
+}
+
+.h1Home {
+    color: #ffcb84e6;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.hello {
+    font-size: 25px;
+}
+
+.developpeur {
+    font-size: 45px;
+}
+
+.image-dev img {
+    max-height: 85vh;
+    padding: 25px;
+    margin: auto;
+}

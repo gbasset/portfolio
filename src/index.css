@@ -12,3 +12,11 @@ code {
 .containerHight {
     padding-top: 100px;
 }
+
+.construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 150px;
+}

@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 
 import menuIco from './Menuico.svg'
 import croix from './Croix.svg'
+
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 
@@ -57,25 +58,24 @@ export default function Header() {
     return (
         <>
             <nav className="headerTop">
-                <h1>PortFolio</h1>
+                <h1 className="h1Home">  Gaëtan Basset </h1>
                 {(menu || !smallScreen) && (
 
                     <ul className="listeMenu">
 
                         <li onClick={hideMenu} className="lienNav" title='Accueil'>
-                            <NavLink activeStyle={{ color: "#7bed9f" }} className="lien" exact to="/">
-                                <img src="" alt="logo site" className="logo" />
-
+                            <NavLink activeStyle={{ color: "#ffcb84e6" }} className="lien" exact to="/">
+                                <div className="logo" > Gb </div>
                             </NavLink>
                         </li>
 
                         <li onClick={hideMenu} className="lienNav" title='projets'>
-                            <NavLink activeStyle={{ color: "#7bed9f" }} className="lien" exact to="/projects">
+                            <NavLink activeStyle={{ color: "#ffcb84e6" }} className="lien" exact to="/projects">
                                 Mes projets
                             </NavLink>
                         </li>
                         <li onClick={hideMenu} className="lienNav" title='à propos'>
-                            <NavLink activeStyle={{ color: "#7bed9f" }} className="lien" exact to="/about">
+                            <NavLink activeStyle={{ color: "#ffcb84e6" }} className="lien" exact to="/about">
                                 Qui suis-je ?
                             </NavLink>
                         </li>
