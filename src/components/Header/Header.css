@@ -1,0 +1,190 @@
+/* 
+*********** Header 
+ */
+
+.headerTop {
+    background: rgb(254, 217, 37);
+    /* height: 95px; */
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: #26242430 0px 6px 8px 0px;
+    text-align: center;
+}
+
+.listeMenu {
+    justify-content: space-around;
+    list-style-type: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lienNav {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.lien {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lien:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.lienNav:nth-child(1) {
+    position: fixed;
+    left: 0px;
+}
+
+.formSubmit {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    flex-shrink: 1;
+}
+
+.logo {
+    margin-top: -5px;
+    height: 50px;
+}
+
+.formSubmit {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.logoLoupe {
+    width: 20px;
+}
+
+.inputRecherche {
+    width: 80%;
+    padding: 11px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+}
+
+.lienNav button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 4px 20px;
+    border: none;
+}
+
+.menuResBtn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menuIco {
+    width: 25px;
+}
+
+.containCartItem {
+    position: absolute;
+    z-index: 5;
+    transform: translate(50%, -50%);
+    top: 34px;
+    right: 43px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.totalCartItem {
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    min-height: 20px;
+    font-size: 14px;
+    font-family: "Roboto Regular", sans-serif;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 30px;
+    margin: auto;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+.favoritesCount {
+    font-size: 26px;
+    color: red;
+}
+
+.favoritesCount div {
+    position: fixed;
+    top: 2%;
+    right: 114px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    min-height: 20px;
+    font-size: 14px;
+    font-family: "Roboto Regular", sans-serif;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 30px;
+    margin: auto;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+@media screen and (max-width: 950px) {
+    .liensNav:nth-child(2) {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .listeMenu {
+        flex-direction: column;
+        height: 250px;
+        padding-top: 50px;
+    }
+    .lienNav {
+        height: 100px;
+        background: #f59b0a;
+        width: 100%;
+    }
+    .lienNav:nth-child(2) {
+        width: 100%!important;
+        padding: 10px 0 20px 0;
+        margin: 0 auto;
+    }
+    .formSubmit {
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+    }
+    .inputRecherche {
+        width: 180px;
+        background-color: #fff;
+        border: 2px solid #fff;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .menuResBtn {
+        display: block!important;
+        z-index: 1000;
+    }
+}
