@@ -2,6 +2,13 @@
     display: flex;
     height: 90vh;
     background-color: #1f2235;
+    background: url(../../Assets/images/imageedit_1_2986170164.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .h1Home {
@@ -17,15 +24,31 @@
 }
 
 .hello {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .developpeur {
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .image-dev img {
-    max-height: 85vh;
+    max-height: 90vh;
+    padding: 0px 0px 0px 25px;
+    filter: drop-shadow(0 0 0.75rem #2f3451);
+    opacity: 0.40;
+    width: 670px;
+}
+
+.test {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.test p {
     padding: 25px;
+    width: 60%;
     margin: auto;
+    text-align: left;
 }
