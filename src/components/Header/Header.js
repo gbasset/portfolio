@@ -64,8 +64,8 @@ export default function Header() {
                     <ul className="listeMenu">
 
                         <li onClick={hideMenu} className="lienNav" title='Accueil'>
-                            <NavLink activeStyle={{ color: "#ffcb84e6" }} className="lien" exact to="/">
-                                <div className="logo" > Gb </div>
+                            <NavLink activeStyle={{ color: "#ffcb84e6" }} className="lien logo" exact to="/">
+                                GB
                             </NavLink>
                         </li>
 
