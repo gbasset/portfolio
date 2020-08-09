@@ -1,0 +1,17 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.project-container img {
+    width: 420px;
+}
+
+@media (max-width: 900px) {
+    .project-container img {
+        width: 320px;
+    }
+}
