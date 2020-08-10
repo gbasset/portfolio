@@ -19,11 +19,11 @@
 
 .headerTop {
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     padding: 10px 0px;
     z-index: 1000;
-    box-shadow: #262424 0px 2px 1px 0px;
+    box-shadow: #2624247d 0px 2px 1px 0px;
     text-align: center;
     background-color: #1f2235;
 }
@@ -31,7 +31,7 @@
 .listeMenu {
     justify-content: space-around;
     list-style-type: none;
-    height: 70px;
+    height: 40px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -159,7 +159,7 @@
 @media screen and (max-width: 900px) {
     .listeMenu {
         flex-direction: column;
-        height: 800px;
+        height: 100vh;
         background: #2f3451;
         overflow: auto;
     }
@@ -181,12 +181,12 @@
         display: block!important;
         z-index: 1000;
         position: fixed;
-        top: 5px;
+        top: 17px;
         right: -11px;
     }
     .headerTop {
         width: 100%;
-        height: 50px;
+        height: 40px;
         position: fixed;
         z-index: 1000;
         box-shadow: #262424 0px 2px 1px 0px;
