@@ -69,4 +69,11 @@
         background-size: cover;
         background-attachment: fixed;
     }
+    .names {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: auto;
+        padding: 19px;
+    }
 }

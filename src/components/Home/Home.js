@@ -1,15 +1,36 @@
 import React from 'react'
 import './Home.css'
 import img from "../../Assets/images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg"
-
+import Typewriter from 'typewriter-effect';
 export default function Home() {
     console.log(img);
     return (
         <div className="containerHight">
             <div className="header-home">
                 <div className="names">
-                    <p className="hello">Bonjour, je suis</p>
-                    <p className="developpeur">Developpeur Web React</p>
+                    {/* <p className="hello">Bonjour, je suis</p> */}
+                    <div  className="hello"> 
+
+            <Typewriter
+            options={{
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 50,
+                changeDelay: 85
+              }}
+            onInit={(typewriter) => {
+                typewriter.typeString(`Bonjour, je suis Developpeur Web <br> Je pratique Html , Css`)
+                  .typeString(', JavaScript ')
+                  .typeString(', React <br> NodeJS et MySql .')
+                  .deleteAll()
+                  .typeString('<strong> Bienvenue <br> sur mon site !')
+                  .pauseFor(500)
+                  .start();
+
+              }}
+            />
+            </div>
+                    {/* <p className="developpeur">Developpeur Web React</p> */}
                 </div>
                 <div className="image-dev">
                     <img src={img} alt="picture presentation" />
