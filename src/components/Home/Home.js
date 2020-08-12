@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 export default function Home() {
     console.log(img);
     return (
-        <div className="containerHight">
+        <div className="">
             <div className="header-home">
                 <div className="names">
                     {/* <p className="hello">Bonjour, je suis</p> */}
@@ -20,8 +20,19 @@ export default function Home() {
               }}
             onInit={(typewriter) => {
                 typewriter.typeString(`Bonjour, je suis Developpeur Web <br> Je pratique Html , Css`)
-                  .typeString(', JavaScript ')
-                  .typeString(', React <br> NodeJS et MySql .')
+                .pauseFor(500)
+                .deleteChars(10)
+                  .typeString(', JavaScript')
+                  .pauseFor(500)
+                  .deleteChars(11)
+                  .typeString(' React')
+                  .pauseFor(500)
+                  .deleteChars(6)
+                  .typeString(' MySql')
+                  .pauseFor(500)
+                  .deleteChars(6)
+                  .typeString(' NodeJS')
+                  .pauseFor(500)
                   .deleteAll()
                   .typeString('<strong> Bienvenue <br> sur mon site !')
                   .pauseFor(500)

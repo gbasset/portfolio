@@ -58,7 +58,7 @@ export default function Header() {
     return (
         <>
             <nav className="headerTop">
-                <h1 className="h1Home">  Gaëtan Basset </h1>
+                {/* <h1 className="h1Home">  Gaëtan Basset </h1> */}
                 {(menu || !smallScreen) && (
 
                     <ul className="listeMenu">

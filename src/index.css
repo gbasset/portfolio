@@ -22,9 +22,9 @@ code {
 }
 
 @media (max-width: 900px) {
-    .containerHight {
+    /* .containerHight {
         padding-top: 40px;
-    }
+    } */
     .construction {
         display: flex;
         flex-direction: column;

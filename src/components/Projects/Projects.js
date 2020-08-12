@@ -8,10 +8,10 @@ export default function Projects() {
                 <h1>Cette page est en construction</h1>
                 <h3>Merci de revenir plus tard</h3>
                 {
-                    projectsList.map(x =>
-                        <div className="project-container">
+                    projectsList.map((x, i) =>
+                        <div className="project-container" key={i}>
                             {x.label}
-                            <img src={x.picture} alt="" />
+                            <img className="pictureProject" src={x.picture} alt="" />
 
                         </div>
                     )
