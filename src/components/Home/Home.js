@@ -41,57 +41,57 @@ export default function Home() {
                     <img src={img} alt="picture presentation" />
                 </div>
             </div>
-            
+            <div style={{height: "100vh"}}>
             <ScrollAnimation 
                 animateIn='bounceInUp'
                 animateOut='fadeOut'
-                delay={200}
+                delay={100}
                 >
                 <h1 className="annimationLanguages">Mes Technos</h1>
             </ScrollAnimation>  
-
-            <div style={{height: "400px"}}>
+</div>
+            <div style={{height: "100vh"}}>
             <ScrollAnimation 
                 animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
-                delay={400}
+                delay={100}
             >
             <h2 className="annimationLanguages"> Javascript</h2>
             </ScrollAnimation>
             </div>
 
-            <div style={{height: "400px"}}>
+            <div style={{height: "100vh"}}>
             <ScrollAnimation 
-                animateIn='bounceInRight'
-                animateOut='bounceOutLeft'
-                delay={400}
+                animateIn='bounceInLeft'
+                animateOut='bounceOutRight'
+                delay={100}
             >
             <h2 className="annimationLanguages">ReactJs</h2>
             </ScrollAnimation>
             </div>
-            <div style={{height: "400px"}}>
+            <div style={{height: "100vh"}}>
             <ScrollAnimation 
             animateIn='bounceInRight'
             animateOut='bounceOutLeft'
-            delay={400}
+            delay={100}
             >
             <h2 className="annimationLanguages">Html / Css</h2>
             </ScrollAnimation>
             </div>
-            <div style={{height: "400px"}}>
+            <div style={{height: "100vh"}}>
             <ScrollAnimation 
-            animateIn='bounceInRight'
-            animateOut='bounceOutLeft'
-            delay={400}
+            animateIn='bounceInLeft'
+            animateOut='bounceOutRight'
+            delay={100}
             >
             <h2 className="annimationLanguages">NodeJs  </h2>
             </ScrollAnimation>
             </div>
-            <div style={{height: "400px"}}>
+            <div style={{height: "100vh"}}>
             <ScrollAnimation 
             animateIn='bounceInRight'
             animateOut='bounceOutLeft'
-            delay={400}
+            delay={100}
             >
             <h2 className="annimationLanguages">Sql  </h2>
             </ScrollAnimation>
