@@ -1,6 +1,11 @@
 import React from 'react'
 import './Home.css'
 import img from "../../Assets/images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg"
+import logoReact from "../../Assets/logos/icons8-react.svg"
+import jsLogo from "../../Assets/logos/icons8-javascript-logo.svg"
+import htmlLogo from "../../Assets/logos/icons8-html-5.svg"
+
+
 import Typewriter from 'typewriter-effect';
 import { Controller, Scene } from 'react-scrollmagic';
 import "animate.css/animate.min.css";
@@ -46,6 +51,7 @@ export default function Home() {
                 animateIn='bounceInUp'
                 animateOut='fadeOut'
                 delay={100}
+                animateOnce={true}
                 >
                 <h1 className="annimationLanguages">Mes Technos</h1>
             </ScrollAnimation>  
@@ -58,6 +64,15 @@ export default function Home() {
             >
             <h2 className="annimationLanguages"> Javascript</h2>
             </ScrollAnimation>
+            <div className="imgLanguages">
+            <ScrollAnimation 
+                animateIn='bounceInLeft'
+                animateOut='bounceOutLeft'
+                delay={100}
+                >
+                <img src={jsLogo} alt=""/>
+                </ScrollAnimation>
+                </div>
             </div>
 
             <div style={{height: "100vh"}}>
@@ -68,6 +83,15 @@ export default function Home() {
             >
             <h2 className="annimationLanguages">ReactJs</h2>
             </ScrollAnimation>
+                <div className="imgLanguages">
+            <ScrollAnimation 
+                animateIn='bounceInLeft'
+                animateOut='bounceOutLeft'
+                delay={100}
+                >
+                <img src={logoReact} alt=""/>
+                </ScrollAnimation>
+                </div>
             </div>
             <div style={{height: "100vh"}}>
             <ScrollAnimation 
@@ -77,6 +101,15 @@ export default function Home() {
             >
             <h2 className="annimationLanguages">Html / Css</h2>
             </ScrollAnimation>
+            <div className="imgLanguages">
+            <ScrollAnimation 
+                animateIn='bounceInLeft'
+                animateOut='bounceOutLeft'
+                delay={100}
+                >
+                <img src={htmlLogo} alt=""/>
+                </ScrollAnimation>
+                </div>
             </div>
             <div style={{height: "100vh"}}>
             <ScrollAnimation 
@@ -86,6 +119,7 @@ export default function Home() {
             >
             <h2 className="annimationLanguages">NodeJs  </h2>
             </ScrollAnimation>
+
             </div>
             <div style={{height: "100vh"}}>
             <ScrollAnimation 

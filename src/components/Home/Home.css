@@ -59,6 +59,15 @@
     font-size: 55px;
 }
 
+.imgLanguages {
+    width: 100%;
+}
+
+.imgLanguages img {
+    width: 100%;
+    max-height: 80vh;
+}
+
 @media (max-width: 900px) {
     .image-dev img {
         display: none;
