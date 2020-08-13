@@ -86,8 +86,9 @@
     max-height: 50vh;
 }
 
-.containerLanguages {
+.containerLanguagesAll {
     height: auto;
+    width: 100%;
     background-color: #1f2235;
     /* background: url(../../Assets/images/bckground.jpg); */
     background-position: 50% 50%;

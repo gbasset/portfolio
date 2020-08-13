@@ -128,6 +128,25 @@ export default function Home() {
                 </ScrollAnimation>
                 </div>
             </div>
+                      
+            <div className="containerLanguage">
+            <ScrollAnimation 
+            animateIn='bounceInUp'
+            animateOut='bounceOutLeft'
+            delay={100}
+            >
+            <h2 className="annimationLanguages">Sql  </h2>
+            </ScrollAnimation>
+            <div className="imgLanguages">
+            <ScrollAnimation 
+                animateIn='bounceInRight'
+                animateOut='bounceOutLeft'
+                delay={100}
+                >
+                <img src={logoSql} alt="" style={{maxHeight:'42vh'}}/>
+                </ScrollAnimation>
+                </div>
+            </div>
             <div className="containerLanguage nodeJs">
             <ScrollAnimation 
             animateIn='bounceInUp'
@@ -139,7 +158,7 @@ export default function Home() {
             </ScrollAnimation>
             <div className="imgLanguages ">
             <ScrollAnimation 
-                animateIn='bounceInRight'
+                animateIn='bounceInLeft'
                 animateOut='bounceOutLeft'
                 delay={100}
                 >
@@ -147,26 +166,6 @@ export default function Home() {
                 </ScrollAnimation>
                 </div>
             </div>
-            
-            <div className="containerLanguage">
-            <ScrollAnimation 
-            animateIn='bounceInUp'
-            animateOut='bounceOutLeft'
-            delay={100}
-            >
-            <h2 className="annimationLanguages">Sql  </h2>
-            </ScrollAnimation>
-            <div className="imgLanguages">
-            <ScrollAnimation 
-                animateIn='bounceInLeft'
-                animateOut='bounceOutLeft'
-                delay={100}
-                >
-                <img src={logoSql} alt="" style={{maxHeight:'42vh'}}/>
-                </ScrollAnimation>
-                </div>
-            </div>
-           
             <div className="test">
 
                 <p>
