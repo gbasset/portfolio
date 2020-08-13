@@ -4,7 +4,9 @@ import img from "../../Assets/images/procreator-ux-design-studio-VzJjPuk53sk-uns
 import logoReact from "../../Assets/logos/icons8-react.svg"
 import jsLogo from "../../Assets/logos/icons8-javascript-logo.svg"
 import htmlLogo from "../../Assets/logos/icons8-html-5.svg"
-import nodejs from "../../Assets/logos/nodejs.svg"
+import nodejs from "../../Assets/logos/nodeJsLogo.svg"
+import logoSql from "../../Assets/logos/database.svg"
+
 
 import Typewriter from 'typewriter-effect';
 import { Controller, Scene } from 'react-scrollmagic';
@@ -46,17 +48,19 @@ export default function Home() {
                     <img src={img} alt="picture presentation" />
                 </div>
             </div>
-            <div style={{height: "100vh"}} style={{backgroundColor:  'green'}}>
+            <div className="containerLanguages">
+
+            <div  style={{height: "18vh"}}>
             <ScrollAnimation 
                 animateIn='bounceInUp'
                 animateOut='fadeOut'
                 delay={100}
                 animateOnce={true}
                 >
-                <h1 className="annimationLanguages">Mes Technos</h1>
+                <h1 className="annimationTechnos">Mes Technos</h1>
             </ScrollAnimation>  
-</div>
-            <div style={{height: "100vh"}} style={{backgroundColor:  'pink'}}>
+            </div>
+            <div className="containerLanguage">
             <ScrollAnimation 
                 animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
@@ -75,7 +79,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div style={{height: "100vh"}} style={{backgroundColor:  'blue'}}>
+            <div className="containerLanguage">
             <ScrollAnimation 
                 animateIn='bounceInLeft'
                 animateOut='bounceOutRight'
@@ -93,7 +97,7 @@ export default function Home() {
                 </ScrollAnimation>
                 </div>
             </div>
-            <div style={{height: "100vh"}} style={{backgroundColor:  'red'}}>
+            <div className="containerLanguage">
             <ScrollAnimation 
             animateIn='bounceInRight'
             animateOut='bounceOutLeft'
@@ -111,7 +115,7 @@ export default function Home() {
                 </ScrollAnimation>
                 </div>
             </div>
-            <div style={{height: "100vh"}}>
+            <div className="containerLanguage">
             <ScrollAnimation 
             animateIn='bounceInLeft'
             animateOut='bounceOutRight'
@@ -125,12 +129,12 @@ export default function Home() {
                 animateOut='bounceOutLeft'
                 delay={100}
                 >
-                <img src={nodejs} alt="" style={{backgroundColor:  'yellow'}}/>
+                <img src={nodejs} alt="" style={{marginTop:  '60px', maxHeight:'42vh'}}/>
                 </ScrollAnimation>
                 </div>
             </div>
             
-            <div style={{height: "100vh"}}>
+            <div className="containerLanguage">
             <ScrollAnimation 
             animateIn='bounceInRight'
             animateOut='bounceOutLeft'
@@ -138,8 +142,17 @@ export default function Home() {
             >
             <h2 className="annimationLanguages">Sql  </h2>
             </ScrollAnimation>
+            <div className="imgLanguages">
+            <ScrollAnimation 
+                animateIn='bounceInLeft'
+                animateOut='bounceOutLeft'
+                delay={100}
+                >
+                <img src={logoSql} alt="" />
+                </ScrollAnimation>
+                </div>
             </div>
-           
+            </div>
             <div className="test">
 
                 <p>
