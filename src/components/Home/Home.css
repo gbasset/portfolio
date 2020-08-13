@@ -53,6 +53,12 @@
     text-align: left;
 }
 
+.annimationLanguages {
+    margin: auto;
+    text-align: center;
+    font-size: 55px;
+}
+
 @media (max-width: 900px) {
     .image-dev img {
         display: none;

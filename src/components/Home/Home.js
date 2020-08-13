@@ -2,6 +2,9 @@ import React from 'react'
 import './Home.css'
 import img from "../../Assets/images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg"
 import Typewriter from 'typewriter-effect';
+import { Controller, Scene } from 'react-scrollmagic';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 export default function Home() {
     console.log(img);
     return (
@@ -19,22 +22,13 @@ export default function Home() {
                 changeDelay: 85
               }}
             onInit={(typewriter) => {
-                typewriter.typeString(`Bonjour, je suis Developpeur Web <br> Je pratique Html , Css`)
+                typewriter.typeString(`Bonjour, moi c'est Gaëtan .`)
                 .pauseFor(500)
-                .deleteChars(10)
-                  .typeString(', JavaScript')
+                  .typeString('<br>Je suis Developpeur Web .')
                   .pauseFor(500)
-                  .deleteChars(11)
-                  .typeString(' React')
-                  .pauseFor(500)
-                  .deleteChars(6)
-                  .typeString(' MySql')
-                  .pauseFor(500)
-                  .deleteChars(6)
-                  .typeString(' NodeJS')
-                  .pauseFor(500)
-                  .deleteAll()
-                  .typeString('<strong> Bienvenue <br> sur mon site !')
+                  .deleteChars(25)
+                //   .deleteAll()
+                  .typeString('Bienvenue <br> sur mon site !')
                   .pauseFor(500)
                   .start();
 
@@ -47,7 +41,64 @@ export default function Home() {
                     <img src={img} alt="picture presentation" />
                 </div>
             </div>
+            
+            <ScrollAnimation 
+                animateIn='bounceInUp'
+                animateOut='fadeOut'
+                delay={200}
+                >
+                <h1 className="annimationLanguages">Mes Technos</h1>
+            </ScrollAnimation>  
+
+            <div style={{height: "400px"}}>
+            <ScrollAnimation 
+                animateIn='bounceInRight'
+                animateOut='bounceOutLeft'
+                delay={400}
+            >
+            <h2 className="annimationLanguages"> Javascript</h2>
+            </ScrollAnimation>
+            </div>
+
+            <div style={{height: "400px"}}>
+            <ScrollAnimation 
+                animateIn='bounceInRight'
+                animateOut='bounceOutLeft'
+                delay={400}
+            >
+            <h2 className="annimationLanguages">ReactJs</h2>
+            </ScrollAnimation>
+            </div>
+            <div style={{height: "400px"}}>
+            <ScrollAnimation 
+            animateIn='bounceInRight'
+            animateOut='bounceOutLeft'
+            delay={400}
+            >
+            <h2 className="annimationLanguages">Html / Css</h2>
+            </ScrollAnimation>
+            </div>
+            <div style={{height: "400px"}}>
+            <ScrollAnimation 
+            animateIn='bounceInRight'
+            animateOut='bounceOutLeft'
+            delay={400}
+            >
+            <h2 className="annimationLanguages">NodeJs  </h2>
+            </ScrollAnimation>
+            </div>
+            <div style={{height: "400px"}}>
+            <ScrollAnimation 
+            animateIn='bounceInRight'
+            animateOut='bounceOutLeft'
+            delay={400}
+            >
+            <h2 className="annimationLanguages">Sql  </h2>
+            </ScrollAnimation>
+            </div>
+           
             <div className="test">
+
                 <p>
 
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem repellat fugit officia accusantium expedita tempore nostrum ratione, rerum ullam impedit facilis aliquam ad error iure eligendi? Dolorum asperiores necessitatibus quaerat.
