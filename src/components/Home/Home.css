@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     background-color: #1f2235;
-    background: url(../../Assets/images/imageedit_1_2986170164.jpg);
+    background: url(../../Assets/images/nordwood-themes-kRNZiGKtz48-unsplash.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,14 +17,14 @@
 }
 
 .names {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: auto;
+    margin: 378px auto;
 }
 
 .hello {
     font-size: 45px;
+    color: black;
+    position: absolute;
+    left: 8%;
 }
 
 .developpeur {
@@ -33,10 +33,11 @@
 
 .image-dev img {
     height: 100vh;
-    padding: 0px 0px 0px 25px;
+    /* padding: 0px 0px 0px 25px; */
     filter: drop-shadow(0 0 0.75rem #2f3451);
-    opacity: 0.40;
-    width: 670px;
+    /* opacity: 0.40; */
+    width: 674px;
+    margin-right: 21px;
 }
 
 .test {
@@ -57,7 +58,7 @@
     margin: auto;
     text-align: center;
     font-size: 55px;
-    padding: 43px;
+    /* padding: 43px; */
 }
 
 .annimationLanguages {
@@ -88,7 +89,7 @@
 .containerLanguages {
     height: auto;
     background-color: #1f2235;
-    background: url(../../Assets/images/markus-spiske-k0rVudBoB4c-unsplash.jpg);
+    /* background: url(../../Assets/images/bckground.jpg); */
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,22 +106,30 @@
         display: flex;
         height: 100vh;
         background-color: #1f2235;
-        background: url(../../Assets/images/imageedit_1_2986170164.jpg);
-        background-position: 50% 50%;
+        background: url(../../Assets/images/imageedit_5_7822050368.jpg);
+        background-position: 100% 47px;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        background-size: cover;
         background-attachment: fixed;
     }
     .names {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         margin: auto;
         padding: 19px;
     }
     .hello {
         font-size: 39px;
+        position: absolute;
+        left: 16%;
+        top: 30%;
+        color: white;
+    }
+    .nodeJs {
+        margin-top: 60px;
+        /* max-height: 35vh; */
+    }
+    .nodeJs img {
+        width: 300px;
+        margin: 136px;
     }
 }

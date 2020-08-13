@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.css'
-import img from "../../Assets/images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg"
+import img from "../../Assets/images/undraw_code_thinking_1jeh.svg"
 import logoReact from "../../Assets/logos/icons8-react.svg"
 import jsLogo from "../../Assets/logos/icons8-javascript-logo.svg"
 import htmlLogo from "../../Assets/logos/icons8-html-5.svg"
 import nodejs from "../../Assets/logos/nodeJsLogo.svg"
 import logoSql from "../../Assets/logos/database.svg"
-
+import imgTools from '../../Assets/images/undraw_code_thinking_1jeh.svg'
 
 import Typewriter from 'typewriter-effect';
 import { Controller, Scene } from 'react-scrollmagic';
@@ -35,7 +35,7 @@ export default function Home() {
                   .pauseFor(500)
                   .deleteChars(25)
                 //   .deleteAll()
-                  .typeString('Bienvenue <br> sur mon site !')
+                  .typeString('Bonne visite !')
                   .pauseFor(500)
                   .start();
 
@@ -45,12 +45,11 @@ export default function Home() {
                     {/* <p className="developpeur">Developpeur Web React</p> */}
                 </div>
                 <div className="image-dev">
-                    <img src={img} alt="picture presentation" />
+                    <img  alt="picture presentation" />
                 </div>
             </div>
-            <div className="containerLanguages">
 
-            <div  style={{height: "18vh"}}>
+            <div className="containerLanguages" >
             <ScrollAnimation 
                 animateIn='bounceInUp'
                 animateOut='fadeOut'
@@ -58,12 +57,24 @@ export default function Home() {
                 animateOnce={true}
                 >
                 <h1 className="annimationTechnos">Mes Technos</h1>
+                
+                
             </ScrollAnimation>  
+            <div className="imgLanguages">
+            <ScrollAnimation 
+                animateIn='bounceInUp'
+                animateOut='bounceOutLeft'
+                delay={100}
+                >
+                <img src={imgTools} alt=""/>
+                </ScrollAnimation>
+                </div>
             </div>
             <div className="containerLanguage">
             <ScrollAnimation 
                 animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
+                animateOnce={true}
                 delay={100}
             >
             <h2 className="annimationLanguages"> Javascript</h2>
@@ -81,15 +92,16 @@ export default function Home() {
 
             <div className="containerLanguage">
             <ScrollAnimation 
-                animateIn='bounceInLeft'
+                animateIn='bounceInUp'
                 animateOut='bounceOutRight'
                 delay={100}
+                animateOnce={true}
             >
             <h2 className="annimationLanguages">ReactJs</h2>
             </ScrollAnimation>
                 <div className="imgLanguages">
             <ScrollAnimation 
-                animateIn='bounceInLeft'
+                animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
                 delay={100}
                 >
@@ -99,44 +111,46 @@ export default function Home() {
             </div>
             <div className="containerLanguage">
             <ScrollAnimation 
-            animateIn='bounceInRight'
-            animateOut='bounceOutLeft'
+            animateIn='bounceInUp'
+            animateOut='bounceOutRight'
             delay={100}
+            animateOnce={true}
             >
             <h2 className="annimationLanguages">Html / Css</h2>
             </ScrollAnimation>
             <div className="imgLanguages">
             <ScrollAnimation 
                 animateIn='bounceInLeft'
-                animateOut='bounceOutLeft'
+                animateOut='bounceOutRight'
                 delay={100}
                 >
                 <img src={htmlLogo} alt=""/>
                 </ScrollAnimation>
                 </div>
             </div>
-            <div className="containerLanguage">
+            <div className="containerLanguage nodeJs">
             <ScrollAnimation 
-            animateIn='bounceInLeft'
+            animateIn='bounceInUp'
             animateOut='bounceOutRight'
             delay={100}
+            animateOnce={true}
             >
             <h2 className="annimationLanguages">NodeJs  </h2>
             </ScrollAnimation>
-            <div className="imgLanguages">
+            <div className="imgLanguages ">
             <ScrollAnimation 
-                animateIn='bounceInLeft'
+                animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
                 delay={100}
                 >
-                <img src={nodejs} alt="" style={{marginTop:  '60px', maxHeight:'42vh'}}/>
+                <img  src={nodejs} alt="" />
                 </ScrollAnimation>
                 </div>
             </div>
             
             <div className="containerLanguage">
             <ScrollAnimation 
-            animateIn='bounceInRight'
+            animateIn='bounceInUp'
             animateOut='bounceOutLeft'
             delay={100}
             >
@@ -148,11 +162,11 @@ export default function Home() {
                 animateOut='bounceOutLeft'
                 delay={100}
                 >
-                <img src={logoSql} alt="" />
+                <img src={logoSql} alt="" style={{maxHeight:'42vh'}}/>
                 </ScrollAnimation>
                 </div>
             </div>
-            </div>
+           
             <div className="test">
 
                 <p>
