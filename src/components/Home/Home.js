@@ -78,7 +78,7 @@ export default function Home() {
                     </div>
                 </div> */}
                 <section id="section07" class="demo">
-                <a href="#section08"><span></span><span></span><span></span>Scroll</a>
+                <a><span></span><span></span><span></span>Scroll</a>
                 </section>
 
                  </>

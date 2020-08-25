@@ -60,6 +60,7 @@
 }
 
 .demo a {
+    cursor: none;
     position: absolute;
     bottom: 0%;
     right: 8%;
@@ -75,9 +76,9 @@
     /* background-color: rgb(255 247 247 / 38%); */
 }
 
-.demo a:hover {
+/* .demo a:hover {
     opacity: .5;
-}
+} */
 
 #section07 a {
     padding-top: 80px;
@@ -181,7 +182,7 @@
 }
 
 .containerLanguages img {
-    margin: 15% auto;
+    margin: 5% auto;
     width: 100%;
 }
 
@@ -252,7 +253,9 @@
         overflow: hidden;
     }
     .containerLanguages img {
-        height: 55vh;
+        height: 25vh;
         overflow: hidden;
+        margin: auto;
+        width: 100%;
     }
 }
