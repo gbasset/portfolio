@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './Home.css'
 import img from "../../Assets/images/undraw_code_thinking_1jeh.svg"
 import logoReact from "../../Assets/logos/icons8-react.svg"
@@ -7,13 +7,29 @@ import htmlLogo from "../../Assets/logos/icons8-html-5.svg"
 import nodejs from "../../Assets/logos/nodeJsLogo.svg"
 import logoSql from "../../Assets/logos/database.svg"
 import imgTools from '../../Assets/images/undraw_code_thinking_1jeh.svg'
-
+import down from '../../Assets/logos/down-arrow.gif' 
 import Typewriter from 'typewriter-effect';
 import { Controller, Scene } from 'react-scrollmagic';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 export default function Home() {
     console.log(img);
+    const [isWritteFirst, setisWritteFirst] = useState(false);
+    const [positionScroll, setpositionScroll] = useState(1);
+    console.log("positionScroll",positionScroll);
+    const animation = ()=>{
+        if(positionScroll == 1){
+            setpositionScroll(2)
+        }else{
+            setpositionScroll(1)
+        }
+    }
+            useEffect(()=>{
+                setTimeout(()=>animation(), 1000)
+            },[positionScroll])
+            useEffect(()=>{
+                setTimeout(()=>setisWritteFirst( !isWritteFirst), 4000)
+            },[])
     return (
         <div className="">
             <div className="header-home">
@@ -47,6 +63,26 @@ export default function Home() {
                 <div className="image-dev">
                     <img  alt="picture presentation" />
                 </div>
+                {isWritteFirst && 
+                <>
+                {/* <img  className={positionScroll === 1 ? `titleScroll1` : 'titleScroll2'}src="https://img.icons8.com/material/24/000000/mouse-scrolling.png"/> */}
+                {/* <div className={positionScroll === 1 ? `titleScroll1` : 'titleScroll2'}>
+                    <div>
+                    <img   src="https://img.icons8.com/android/24/000000/double-down.png"/>
+                    </div>
+                    <div>
+                    <img   src="https://img.icons8.com/android/24/000000/double-down.png"/>
+                    </div>
+                    <div>
+                    <img   src="https://img.icons8.com/android/24/000000/double-down.png"/>
+                    </div>
+                </div> */}
+                <section id="section07" class="demo">
+                <a href="#section08"><span></span><span></span><span></span>Scroll</a>
+                </section>
+
+                 </>
+                }
             </div>
 
             <div className="containerLanguages" >
@@ -56,15 +92,16 @@ export default function Home() {
                 delay={100}
                 animateOnce={true}
                 >
-                <h1 className="annimationTechnos">Mes Technos</h1>
+                <h1 className="annimationTechnos">Skills</h1>
                 
                 
             </ScrollAnimation>  
-            <div className="imgLanguages">
+            <div className="">
             <ScrollAnimation 
                 animateIn='bounceInUp'
                 animateOut='bounceOutLeft'
                 delay={100}
+                animateOnce={true}
                 >
                 <img src={imgTools} alt=""/>
                 </ScrollAnimation>
@@ -84,6 +121,7 @@ export default function Home() {
                 animateIn='bounceInLeft'
                 animateOut='bounceOutLeft'
                 delay={100}
+                animateOnce={true}
                 >
                 <img src={jsLogo} alt=""/>
                 </ScrollAnimation>
@@ -104,6 +142,7 @@ export default function Home() {
                 animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
                 delay={100}
+                animateOnce={true}
                 >
                 <img src={logoReact} alt=""/>
                 </ScrollAnimation>
@@ -123,6 +162,7 @@ export default function Home() {
                 animateIn='bounceInLeft'
                 animateOut='bounceOutRight'
                 delay={100}
+                animateOnce={true}
                 >
                 <img src={htmlLogo} alt=""/>
                 </ScrollAnimation>
@@ -134,6 +174,7 @@ export default function Home() {
             animateIn='bounceInUp'
             animateOut='bounceOutLeft'
             delay={100}
+            animateOnce={true}
             >
             <h2 className="annimationLanguages">Sql  </h2>
             </ScrollAnimation>
@@ -142,6 +183,7 @@ export default function Home() {
                 animateIn='bounceInRight'
                 animateOut='bounceOutLeft'
                 delay={100}
+                animateOnce={true}
                 >
                 <img src={logoSql} alt="" style={{maxHeight:'42vh'}}/>
                 </ScrollAnimation>
@@ -161,6 +203,7 @@ export default function Home() {
                 animateIn='bounceInLeft'
                 animateOut='bounceOutLeft'
                 delay={100}
+                animateOnce={true}
                 >
                 <img  src={nodejs} alt="" />
                 </ScrollAnimation>

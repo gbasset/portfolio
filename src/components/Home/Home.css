@@ -23,8 +23,7 @@
 .hello {
     font-size: 45px;
     color: black;
-    position: absolute;
-    left: 8%;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .developpeur {
@@ -38,6 +37,108 @@
     /* opacity: 0.40; */
     width: 674px;
     margin-right: 21px;
+}
+
+.titleScroll1 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    position: fixed;
+    top: 87%;
+    right: 8%;
+}
+
+.titleScroll2 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    position: fixed;
+    top: 85%;
+    right: 8%;
+}
+
+.demo a {
+    position: absolute;
+    bottom: 0%;
+    right: 8%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: rgb(0, 0, 0);
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    /* background-color: rgb(255 247 247 / 38%); */
+}
+
+.demo a:hover {
+    opacity: .5;
+}
+
+#section07 a {
+    padding-top: 80px;
+}
+
+#section07 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+#section07 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#section07 a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+
+#section07 a span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+@-webkit-keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .test {
@@ -70,6 +171,18 @@
 .containerLanguage {
     margin: 10px auto;
     height: 55vh;
+    overflow: hidden;
+}
+
+.containerLanguages {
+    margin: 10px auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.containerLanguages img {
+    margin: 15% auto;
+    width: 100%;
 }
 
 .imgLanguages {
@@ -132,5 +245,14 @@
     .nodeJs img {
         width: 300px;
         margin: 136px;
+    }
+    .containerLanguages {
+        margin: 10px auto;
+        height: 55vh;
+        overflow: hidden;
+    }
+    .containerLanguages img {
+        height: 55vh;
+        overflow: hidden;
     }
 }

@@ -31,11 +31,12 @@
 .listeMenu {
     justify-content: space-around;
     list-style-type: none;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     flex-direction: row;
     overflow: auto;
+    font-family: 'Pacifico', cursive;
 }
 
 .lienNav {
