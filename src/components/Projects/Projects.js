@@ -4,9 +4,9 @@ import './Projects.css'
 export default function Projects() {
     return (
         <div className="containerHight">
-            <div className="construction">
-                <h1>Cette page est en construction</h1>
-                <h3>Merci de revenir plus tard</h3>
+
+            <div className="container-projet-list">
+
                 {
                     projectsList.map((x, i) =>
                         <div className="project-container" key={i}>
@@ -17,6 +17,8 @@ export default function Projects() {
                     )
                 }
             </div>
+
         </div>
+
     )
 }

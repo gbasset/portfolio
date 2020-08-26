@@ -15,18 +15,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 export default function Home() {
     console.log(img);
     const [isWritteFirst, setisWritteFirst] = useState(false);
-    const [positionScroll, setpositionScroll] = useState(1);
-    console.log("positionScroll",positionScroll);
-    const animation = ()=>{
-        if(positionScroll == 1){
-            setpositionScroll(2)
-        }else{
-            setpositionScroll(1)
-        }
-    }
-            useEffect(()=>{
-                setTimeout(()=>animation(), 1000)
-            },[positionScroll])
             useEffect(()=>{
                 setTimeout(()=>setisWritteFirst( !isWritteFirst), 4000)
             },[])
@@ -65,19 +53,7 @@ export default function Home() {
                 </div>
                 {isWritteFirst && 
                 <>
-                {/* <img  className={positionScroll === 1 ? `titleScroll1` : 'titleScroll2'}src="https://img.icons8.com/material/24/000000/mouse-scrolling.png"/> */}
-                {/* <div className={positionScroll === 1 ? `titleScroll1` : 'titleScroll2'}>
-                    <div>
-                    <img   src="https://img.icons8.com/android/24/000000/double-down.png"/>
-                    </div>
-                    <div>
-                    <img   src="https://img.icons8.com/android/24/000000/double-down.png"/>
-                    </div>
-                    <div>
-                    <img   src="https://img.icons8.com/android/24/000000/double-down.png"/>
-                    </div>
-                </div> */}
-                <section id="section07" class="demo">
+                <section id="section07" className="demo">
                 <a><span></span><span></span><span></span>Scroll</a>
                 </section>
 

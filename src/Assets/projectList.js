@@ -3,6 +3,8 @@ import movie from './images/movie.png'
 import juleLily from './images/dashboard_jule_et_lily.png'
 import justePrice from './images/justeprix.PNG'
 import catsCasino from './images/casinocats.PNG'
+import scrollexp from './images/scrollexp.PNG'
+import restaurant from './images/restaurant.PNG'
 
 const projectsList = [
     {
@@ -55,6 +57,46 @@ const projectsList = [
         category: 'React ',
         keywords: ['chats', 'cats', 'game', 'jeux'],
         infos: 'Création d/un mini site autour de 3 API/s sur les chats',
+    },
+    {
+        key: 'Beer Project',
+        label: 'Beer Project',
+        picture: catsCasino,
+        link: '',
+        github: 'https://github.com/gbasset/beerProject',
+        category: 'React ',
+        keywords: ['shop', 'bière'],
+        infos: 'Création d/un eShop avec l/API Punk API',
+    },
+    {
+        key: 'Skills',
+        label: 'Skills',
+        picture: "https://github.com/gbasset/Skills-projet-2/blob/master/breakit/frontEnd/src/components/img/plancheSKILLS.jpg?raw=true",
+        link: '',
+        github: 'https://github.com/gbasset/Skills-projet-2',
+        category: 'React ',
+        keywords: ['nodeJS', 'React'],
+        infos: 'Création d/une application avec NodeJs et React',
+    },
+    {
+        key: 'Scroll Sound',
+        label: 'Scroll Sound',
+        picture: scrollexp,
+        link: 'https://gbasset.github.io/scrollSoundExperience/',
+        github: 'https://github.com/gbasset/scrollSoundExperience',
+        category: 'Javascript ',
+        keywords: ['Javascript', 'Css'],
+        infos: 'Création d/un site basé sur les sons et les touches du clavier',
+    },
+    {
+        key: 'Reastaurant',
+        label: 'Restaurant',
+        picture: restaurant,
+        link: 'https://gbasset.github.io/ebanrestaurant/',
+        github: 'https://github.com/gbasset/ebanrestaurant',
+        category: 'Javascript ',
+        keywords: ['Javascript', 'Css'],
+        infos: 'Création d/un site de restauration',
     },
 
 
