@@ -89,7 +89,9 @@ export default function Header() {
 
             <div className="menuResBtn">
                 <img onClick={toggleNavRes} src={!menu ? menuIco : croix} alt="icone menu responsive" className="menuIco" />
-                <h1 className="name">Gaëtan Basset || Portfolio</h1>
+
+                <h1>   <NavLink className="name" activeStyle={{ color: "#ffcb84e6" }} exact to="/">Gaëtan Basset || Portfolio   </NavLink> </h1>
+
             </div>
 
         </>

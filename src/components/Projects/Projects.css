@@ -1,6 +1,7 @@
 .container-projet-list {
     width: 100%;
-    height: 100vh;
+    /* max-height: 100vh; */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,31 +23,94 @@
 .project-container img {
     min-height: 150px;
     max-height: 240px;
+    width: 100%;
+}
+
+.project-container2 img {
+    min-height: 150px;
+    max-height: 240px;
+    width: 100%;
+    opacity: 0.4;
 }
 
 .project-container :hover img {
-    opacity: 0.5;
+    opacity: 0.4;
+    transition: all .2s ease;
+    transform: scale(1.1);
 }
 
 .project-container :hover .btn {
     visibility: visible;
 }
 
+.project-container :hover p {
+    visibility: visible;
+}
+
+.nameProjects {
+    visibility: hidden;
+    color: rgba(255, 203, 132, 0.9);
+    font-size: 25px;
+    position: relative;
+    bottom: 145px;
+    text-decoration: none;
+    text-align: center;
+}
+
 .btn {
     visibility: hidden;
-    display: flex;
+    display: block;
     align-items: center;
     position: relative;
-    /* text-align: center; */
+    text-align: center;
     bottom: 125px;
     height: 46px;
     padding: 5px;
-    background-color: rgba(255, 203, 132, 0.9);
+    background-color: rgba(49, 47, 44, 0.9);
     border-radius: 5px;
-    width: 50px;
+    width: 100px;
     margin: auto;
     color: white;
     cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.btn i {
+    color: rgba(255, 203, 132, 0.9);
+    font-size: 15px;
+}
+
+.nameProjects2 {
+    color: rgba(255, 203, 132, 0.9);
+    font-size: 25px;
+    position: relative;
+    bottom: 145px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn2 {
+    display: block;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    bottom: 125px;
+    height: 46px;
+    padding: 5px;
+    background-color: rgba(49, 47, 44, 0.9);
+    border-radius: 5px;
+    width: 100px;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.btn2 i {
+    color: rgba(255, 203, 132, 0.9);
+    font-size: 15px;
 }
 
 @media (max-width: 900px) {

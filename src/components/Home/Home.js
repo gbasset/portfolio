@@ -10,7 +10,7 @@ import imgTools from '../../Assets/images/undraw_code_thinking_1jeh.svg'
 import down from '../../Assets/logos/down-arrow.gif' 
 import Typewriter from 'typewriter-effect';
 import { Controller, Scene } from 'react-scrollmagic';
-import { Link, useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 export default function Home() {
@@ -22,10 +22,12 @@ export default function Home() {
            }
             },[])
     return (
-        <div className="">
+        <div className="contain">
             <div className="header-home">
                 <div className="names">
+                   
                     {/* <p className="hello">Bonjour, je suis</p> */}
+                
                     <div  className="hello"> 
 
             <Typewriter

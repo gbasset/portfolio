@@ -161,7 +161,6 @@
     margin: auto;
     text-align: center;
     font-size: 55px;
-    /* padding: 43px; */
 }
 
 .annimationLanguages {
@@ -198,7 +197,7 @@
     text-align: center;
     width: 700px;
     margin: auto;
-    max-height: 50vh;
+    max-height: 48vh;
 }
 
 .containerLanguagesAll {
@@ -213,6 +212,12 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* .contain .containerLanguage:nth-child(odd) {
+    margin: auto;
+    text-align: right;
+    font-size: 55px;
+} */
 
 @media (max-width: 900px) {
     .image-dev img {
