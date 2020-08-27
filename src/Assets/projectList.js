@@ -11,7 +11,7 @@ const projectsList = [
         key: 'movie',
         label: 'movie project',
         picture: movie,
-        link: 'https://github.com/gbasset/search-moviesz',
+        link: 'https://moviesearchgaetan.netlify.app/',
         github: 'https://github.com/gbasset/search-movies',
         category: 'react',
         keywords: ["movies", "cinema", "react"],
