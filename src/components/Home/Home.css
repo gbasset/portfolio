@@ -73,7 +73,7 @@
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-    /* background-color: rgb(255 247 247 / 38%); */
+    background-color: rgb(255 247 247 / 14%);
 }
 
 /* .demo a:hover {
@@ -234,7 +234,7 @@
         padding: 19px;
     }
     .hello {
-        font-size: 39px;
+        font-size: 30px;
         position: absolute;
         left: 16%;
         top: 30%;
@@ -258,5 +258,11 @@
         overflow: hidden;
         margin: auto;
         width: 100%;
+    }
+    .imgLanguages img {
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        max-height: 50vh;
     }
 }
