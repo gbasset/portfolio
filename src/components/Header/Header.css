@@ -104,6 +104,10 @@
     width: 25px;
 }
 
+.name {
+    display: none;
+}
+
 .containCartItem {
     position: absolute;
     z-index: 5;
@@ -199,5 +203,13 @@
         top: 0;
         left: 0;
         margin: auto;
+    }
+    .name {
+        display: flex;
+        position: fixed;
+        font-size: 20px;
+        left: 88px;
+        top: 22px;
+        text-align: center;
     }
 }

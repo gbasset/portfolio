@@ -89,6 +89,7 @@ export default function Header() {
 
             <div className="menuResBtn">
                 <img onClick={toggleNavRes} src={!menu ? menuIco : croix} alt="icone menu responsive" className="menuIco" />
+                <h1 className="name">Gaëtan Basset || Portfolio</h1>
             </div>
 
         </>
