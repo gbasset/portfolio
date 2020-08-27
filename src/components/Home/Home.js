@@ -10,13 +10,16 @@ import imgTools from '../../Assets/images/undraw_code_thinking_1jeh.svg'
 import down from '../../Assets/logos/down-arrow.gif' 
 import Typewriter from 'typewriter-effect';
 import { Controller, Scene } from 'react-scrollmagic';
+import { Link, useLocation } from 'react-router-dom'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 export default function Home() {
-    console.log(img);
+    const path = useLocation()
     const [isWritteFirst, setisWritteFirst] = useState(false);
             useEffect(()=>{
-                setTimeout(()=>setisWritteFirst( !isWritteFirst), 4000)
+           if(path.pathname !== "/"){
+               setTimeout(()=>setisWritteFirst( !isWritteFirst), 4000)
+           }
             },[])
     return (
         <div className="">
@@ -185,7 +188,7 @@ export default function Home() {
                 </ScrollAnimation>
                 </div>
             </div>
-            <div className="test">
+            <div className="text">
 
                 <p>
 

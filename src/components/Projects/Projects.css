@@ -13,16 +13,40 @@
     align-items: center;
     justify-content: space-around;
     margin: auto;
-    height: 250px;
+    max-height: 250px;
+    min-height: 240px;
+    width: 420px;
+    padding: 10px;
 }
 
 .project-container img {
-    width: 420px;
+    min-height: 150px;
+    max-height: 240px;
 }
 
-.pictureProject {
-    width: 100%;
-    height: 100%;
+.project-container :hover img {
+    opacity: 0.5;
+}
+
+.project-container :hover .btn {
+    visibility: visible;
+}
+
+.btn {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* text-align: center; */
+    bottom: 125px;
+    height: 46px;
+    padding: 5px;
+    background-color: rgba(255, 203, 132, 0.9);
+    border-radius: 5px;
+    width: 50px;
+    margin: auto;
+    color: white;
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {

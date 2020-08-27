@@ -142,18 +142,19 @@
     }
 }
 
-.test {
+.text {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.test p {
+.text p {
     padding: 25px;
     width: 60%;
     margin: auto;
     text-align: left;
+    font-size: 20px;
 }
 
 .annimationTechnos {
