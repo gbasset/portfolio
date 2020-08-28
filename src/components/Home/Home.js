@@ -58,10 +58,12 @@ export default function Home() {
                 </div>
                 {isWritteFirst && 
                 <>
-                <section id="section07" className="demo">
+                {/* <section id="section07" className="demo">
                 <a><span></span><span></span><span></span>Scroll</a>
+                </section> */}
+                <section id="section10" className="demo">
+                     <a href="#thanks"><span></span>Scroll</a>
                 </section>
-
                  </>
                 }
             </div>

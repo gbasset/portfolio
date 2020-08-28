@@ -1,0 +1,27 @@
+.containerProject h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.slider {
+    height: 560px;
+    width: 100% !important;
+    overflow: hidden;
+    margin: auto;
+}
+
+.awssld__content>img {
+    height: auto!important;
+}
+
+@media (max-width: 900px) {
+    .awssld__content>img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .slider {
+        height: auto;
+        max-height: 200px;
+        overflow: hidden;
+    }
+}
