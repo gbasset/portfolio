@@ -19,6 +19,17 @@ code {
     margin-top: 150px;
 }
 
+.slider {
+    height: 560px;
+    width: 95% !important;
+    overflow: hidden;
+    margin: auto;
+}
+
+.awssld__content>img {
+    height: auto!important;
+}
+
 @media (max-width: 900px) {
     /* .containerHight {
         padding-top: 40px;
@@ -29,5 +40,14 @@ code {
         justify-content: space-around;
         text-align: center;
         margin-top: 50px;
+    }
+    .slider {
+        height: 150px;
+        width: 95% !important;
+        overflow: hidden;
+        margin: auto;
+    }
+    .awssld__content>img {
+        height: auto;
     }
 }
