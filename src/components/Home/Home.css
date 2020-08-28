@@ -63,6 +63,7 @@
     cursor: none;
     position: absolute;
     bottom: 31%;
+    right: 50%;
     margin: auto;
     z-index: 2;
     display: inline-block;
@@ -333,5 +334,10 @@
         width: 300px;
         margin: auto;
         max-height: 44vh;
+    }
+    .demo a {
+        position: absolute;
+        bottom: 31%;
+        right: 35%;
     }
 }
