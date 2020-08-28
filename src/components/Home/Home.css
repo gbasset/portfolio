@@ -63,7 +63,7 @@
     cursor: none;
     position: absolute;
     bottom: 31%;
-    right: 50%;
+    margin: auto;
     z-index: 2;
     display: inline-block;
     transform: translate(0, -50%);

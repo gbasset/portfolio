@@ -34,7 +34,7 @@ export default function Projects() {
 
                             <Link className='lien'
                                 to={{
-
+                                    pathname: `projectItem`,
                                     state: {
                                         item: x
                                     }
@@ -52,7 +52,7 @@ export default function Projects() {
 
                             <Link className='lien'
                                 to={{
-
+                                    pathname: `projectItem`,
                                     state: {
                                         item: x
                                     }
