@@ -27,14 +27,14 @@ export default function ProjectItem() {
                             )}
 
                         </AutoplaySlider>
-                        <p>{itemN.infos}</p>
+                        <p className="description">{itemN.infos}</p>
                         {itemN.link && <a href={`${itemN.link}`} target="_blank" rel="noopener noreferrer">Visiter le site</a>}
                         <h2>Stack technique :</h2>
                         <ul>
                             {itemN.category.map(x =>
-                                <>{x}</>
+                                <li>{x}</li>
+
                             )}
-                            <li></li>
                         </ul>
                     </>
                 }

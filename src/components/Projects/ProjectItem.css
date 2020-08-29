@@ -4,7 +4,7 @@
 }
 
 .slider {
-    height: 560px;
+    height: 70vh;
     width: 100% !important;
     overflow: hidden;
     margin: auto;
@@ -12,6 +12,12 @@
 
 .awssld__content>img {
     height: auto!important;
+}
+
+.description {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
 }
 
 @media (max-width: 900px) {
