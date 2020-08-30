@@ -12,10 +12,18 @@ export default function Footer() {
                 </ul>
             </nav>
 
-            <div>
-                <div>Reseaux sociaux</div>
-                <div>copyright</div>
+            <div className="right_footer">
+                <div>
+                    <ul className="reseaux">
+                        <li><a href="https://www.linkedin.com/in/gaetan-basset-289b9410a/" target='_blank'> <i class=" fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/gbasset" target='_blank'> <i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>&copy; Basset Gaëtan</h3>
+                </div>
             </div>
+
         </div>
     )
 }
