@@ -1,16 +1,17 @@
 .footer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
     justify-content: left;
-    /* height: 120px; */
-    margin-top: 10px;
-    background: rgba(255, 203, 132, 0.9);
+    margin-top: 40px;
+    background: #313552;
     position: sticky;
     width: 100%;
     color: #ffffff;
-    box-shadow: 0 3px 12px 8px rgb(212 202 134 / 20%);
+    box-shadow: 0 3px 12px 8px rgb(46 51 83);
     font-family: 'Archivo', sans-serif;
-    padding: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 7px;
 }
 
 .footer li {
@@ -48,6 +49,20 @@
     color: white;
 }
 
-.footer nav {
-    width: 50%;
+.copy {
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    margin: 16px auto 0px auto;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    color: rgba(255, 203, 132, 0.9);
 }

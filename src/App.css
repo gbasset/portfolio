@@ -3,7 +3,7 @@ body, html {
   background-color: #1f2235;
   color: beige;
   /* text-align: center; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   width: 100%;
 }
 

@@ -28,14 +28,23 @@ export default function ProjectItem() {
                         </AutoplaySlider>
                         <h1>{itemN.label.toUpperCase()}</h1>
                         <p className="description">{itemN.infos}</p>
-                        <h2>Stack technique :</h2>
+                        <h2>Stack technique </h2>
                         <ul className="list-tags">
                             {itemN.category.map((x, i) =>
                                 <li key={i}> <a>{x}</a></li>
                             )}
                         </ul>
                         <div className="devices">
-                            Expériences sur {itemN.devices.map(x => x + ' ')}
+                            <h2>Devices</h2>
+                            <p>
+                                {itemN.devices.includes('Mobile') && <i className="fas fa-mobile-alt"></i>}
+                            &ensp;
+                             {itemN.devices.includes('Desktop') && <i className="fas fa-desktop"></i>}
+                            </p>
+
+                        </div>
+                        <div className='btn-container'>
+                            {itemN.github && <a className="btn-more" href={`${itemN.github}`} target="_blank" rel="noopener noreferrer">Voir le code</a>}
                         </div>
                         <div className='btn-container'>
                             {itemN.link && <a className="btn-more" href={`${itemN.link}`} target="_blank" rel="noopener noreferrer">Visiter le site</a>}

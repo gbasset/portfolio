@@ -168,7 +168,7 @@ export default function Home() {
                 delay={100}
                 animateOnce={true}
                 >
-                <img src={logoSql} alt="" style={{maxHeight:'42vh'}}/>
+                <img src={logoSql} alt="" style={{maxHeight:'31vh'}}/>
                 </ScrollAnimation>
                 </div>
             </div>

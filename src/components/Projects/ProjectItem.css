@@ -3,6 +3,7 @@
     margin-top: 12px;
     text-align: center;
     font-family: 'Archivo', sans-serif;
+    color: white;
 }
 
 .slider {
@@ -17,15 +18,17 @@
 }
 
 .description {
-    width: 60%;
+    width: 61%;
     margin: 15px auto;
+    text-align: left;
     font-size: 20px;
+    color: #efebcb;
 }
 
 .list-tags {
     display: flex;
-    width: 80%;
-    justify-content: space-evenly;
+    width: 250px;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: auto;
     font-size: 15px;
@@ -72,8 +75,13 @@
     text-decoration: none;
 }
 
+.containerProject p {
+    line-height: 36px;
+    font-family: 'Archivo', sans-serif;
+}
+
 .btn-container {
-    margin: 14px auto;
+    margin: 40px auto;
     text-align: center;
     border-radius: 4px;
 }
@@ -82,6 +90,18 @@
     color: #1f2235;
     border: 1px solid #ddd;
     background-color: rgba(255, 203, 132, 0.9);
+}
+
+.devices p {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.devices i {
+    color: rgba(255, 203, 132, 0.9);
+    font-size: 25px;
 }
 
 @media (max-width: 900px) {
