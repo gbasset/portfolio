@@ -141,9 +141,13 @@ const projectsList = [
     {
         key: 'Cats Project',
         label: 'Cats Project',
-        picture: catsCasino,
+        picture: "https://www.hebergeur-image.com/upload/176.175.139.191-5f4bd2e42f992.png",
         link: 'https://gbasset.github.io/catsProjectReact/#/',
         github: 'https://github.com/gbasset/catsProjectReact',
+        pictures: [
+            "https://www.hebergeur-image.com/upload/176.175.139.191-5f4bd2e42f992.png",
+            "https://www.hebergeur-image.com/upload/176.175.139.191-5f4bd2e4369eb.png",
+        ],
         category: ['React', 'Cat Api', 'Css'],
         keywords: ['chats', 'cats', 'game', 'jeux'],
         devices: ['desktop'],
