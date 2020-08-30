@@ -17,6 +17,7 @@ code {
     justify-content: space-around;
     text-align: center;
     margin-top: 150px;
+    height: 60vh;
 }
 
 @media (max-width: 900px) {

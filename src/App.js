@@ -9,15 +9,16 @@ import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Page404 from './components/Page404';
 import ProjectItem from './components/Projects/ProjectItem';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
   return (
 
+
     <Router
     // forceRefresh={true}
     >
-      {/* <div className='App'> */}
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -27,7 +28,7 @@ function App() {
         <Route component={Page404} />
       </Switch>
 
-      {/* </div> */}
+      <Footer />
     </Router>
 
   );

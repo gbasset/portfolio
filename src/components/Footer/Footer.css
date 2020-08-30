@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 80px;
+    margin-top: 10px;
+    background: black;
+    position: sticky;
+    width: 100%;
+}
+
+.footer nav {
+    width: 50%;
+}
