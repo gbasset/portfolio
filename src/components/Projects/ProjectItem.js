@@ -16,7 +16,6 @@ export default function ProjectItem() {
             <div className="containerProject">
                 {itemN &&
                     <>
-                        <h1>{itemN.label.toUpperCase()}</h1>
                         <AutoplaySlider className="slider"
                             play={true}
                             cancelOnInteraction={false} // should stop playing on user interaction
@@ -27,15 +26,20 @@ export default function ProjectItem() {
                             )}
 
                         </AutoplaySlider>
+                        <h1>{itemN.label.toUpperCase()}</h1>
                         <p className="description">{itemN.infos}</p>
-                        {itemN.link && <a href={`${itemN.link}`} target="_blank" rel="noopener noreferrer">Visiter le site</a>}
                         <h2>Stack technique :</h2>
-                        <ul>
-                            {itemN.category.map(x =>
-                                <li>{x}</li>
-
+                        <ul className="list-tags">
+                            {itemN.category.map((x, i) =>
+                                <li key={i}> <a>{x}</a></li>
                             )}
                         </ul>
+                        <div className="devices">
+                            Expériences sur {itemN.devices.map(x => x + ' ')}
+                        </div>
+                        <div className='btn-container'>
+                            {itemN.link && <a className="btn-more" href={`${itemN.link}`} target="_blank" rel="noopener noreferrer">Visiter le site</a>}
+                        </div>
                     </>
                 }
             </div>

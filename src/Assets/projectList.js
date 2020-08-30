@@ -22,8 +22,9 @@ const projectsList = [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48d63225b3e.PNG",
 
         ],
-        category: ['React', 'JavaScript', 'Css'],
+        category: ['React', 'JavaScript', 'Css', ' Bootstrap'],
         keywords: ["movies", "cinema", "react"],
+        devices: ['Mobile', 'Desktop'],
         infos: "Ce projet est un mini site web sur le cinéma, basé autour des données de l'Api ' The Movie Db '. La page d'accueil affiche le film de plus regardé en salle actuellement ainsi que les autres films en salles. Il offre la possibilité de rechercher des films par noms et affiche le synopsis, lu casting ainsi que des bandes annonces et making of de ce film. Il permet aussi de se laisser tenter par d'autres films avec un système de recommandation de film basé sur la recherche précédente. "
         ,
     },
@@ -44,6 +45,7 @@ const projectsList = [
         ],
         category: ['React', 'NodeJs', 'Sql', 'JavaScript', 'Css'],
         keywords: ['wild code school', 'back office', 'projet commun'],
+        devices: ['Desktop'],
         infos: 'Création du back office pour le site de e commerce Jule et Lily',
     },
     {
@@ -61,6 +63,7 @@ const projectsList = [
         ],
         category: ['Javascript '],
         keywords: ['Javascript', 'Html', 'Css'],
+        devices: ['Mobile', 'Desktop'],
         infos: 'Création d/un site de restauration',
     },
     {
@@ -79,6 +82,7 @@ const projectsList = [
         ],
         category: ['React', 'NodeJs', 'JavaScript', 'Css'],
         keywords: ['nodeJS', 'React'],
+        devices: ['Mobile', 'Desktop'],
         infos: 'Création d/une application avec NodeJs et React',
     },
     {
@@ -95,6 +99,7 @@ const projectsList = [
         ],
         category: ['React', 'JavaScript', 'Css', 'Punk Api'],
         keywords: ['shop', 'bière'],
+        devices: ['Mobile', 'Desktop'],
         infos: 'Création d/un eShop avec l/API Punk API',
     },
     {
@@ -111,6 +116,7 @@ const projectsList = [
         ],
         category: ['Javascript', 'Css', 'Html'],
         keywords: ["jeux", "game"],
+        devices: ['Desktop'],
         infos: 'A javascript game',
     },
     {
@@ -121,6 +127,7 @@ const projectsList = [
         github: 'https://github.com/gbasset/JustPrice-Vanilla-Js',
         category: ['Javascript', 'Html', 'Css'],
         keywords: ['javasript', 'jeux', 'game'],
+        devices: ['Mobile', 'Desktop'],
         infos: 'Jeux du juste prix en Javascript vanilla',
     },
 
@@ -132,7 +139,8 @@ const projectsList = [
         github: 'https://github.com/gbasset/catsProjectReact',
         category: ['React', 'Cat Api', 'Css'],
         keywords: ['chats', 'cats', 'game', 'jeux'],
-        infos: 'Création d/un mini site autour de 3 API/s sur les chats',
+        devices: ['desktop'],
+        infos: "Création d'un mini site autour de 3 API's sur les chats",
     },
 
     {
@@ -150,7 +158,8 @@ const projectsList = [
         ],
         category: ['Javascript '],
         keywords: ['Javascript', 'Html', 'Css'],
-        infos: 'Création d/un site basé sur les sons et les touches du clavier',
+        devices: ['desktop'],
+        infos: "Création d'un site basé sur les sons et les touches du clavier",
     },
 
 

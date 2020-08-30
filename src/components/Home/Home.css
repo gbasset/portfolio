@@ -238,12 +238,14 @@
     margin: 10px auto;
     height: 55vh;
     overflow: hidden;
+    font-family: 'Archivo', sans-serif;
 }
 
 .containerLanguages {
     margin: 10px auto;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
+    font-family: 'Archivo', sans-serif;
 }
 
 .containerLanguages img {
@@ -320,7 +322,7 @@
     }
     .containerLanguages {
         margin: 10px auto;
-        height: 55vh;
+        height: 35vh;
         overflow: hidden;
     }
     .containerLanguages img {
@@ -339,5 +341,11 @@
         position: absolute;
         bottom: 31%;
         right: 35%;
+    }
+    .containerLanguage {
+        margin: 10px auto;
+        height: 39vh;
+        overflow: hidden;
+        font-family: 'Archivo', sans-serif;
     }
 }

@@ -75,7 +75,7 @@ export default function Home() {
                 delay={100}
                 animateOnce={true}
                 >
-                <h1 className="annimationTechnos">Skills</h1>
+                <h1 className="annimationTechnos">Compétences techniques</h1>
                 
                 
             </ScrollAnimation>  
