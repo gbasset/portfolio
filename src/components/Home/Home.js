@@ -22,9 +22,9 @@ export default function Home() {
             },[])
             const handleClick = () => {
                 
-                fetch("../../netlify/functions/" )
+                fetch("/.netlify/functions/hello" )
                   .then(response => response.json())
-                  .then(json => console.log(json.msg))
+                  .then(json => console.log(json))
               }
               useEffect(() => handleClick(), [])
     return (
