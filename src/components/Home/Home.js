@@ -20,6 +20,13 @@ export default function Home() {
                console.log('', path);
                setTimeout(()=>setisWritteFirst( !isWritteFirst), 2000)
             },[])
+            const handleClick = () => {
+                
+                fetch("../../netlify/functions/" )
+                  .then(response => response.json())
+                  .then(json => console.log(json.msg))
+              }
+              useEffect(() => handleClick(), [])
     return (
         <div className="contain">
             <div className="header-home">

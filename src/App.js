@@ -17,7 +17,7 @@ function App() {
   return (
 
 
-    <Router
+    < Router
     // forceRefresh={true}
     >
       <Header />
@@ -31,7 +31,7 @@ function App() {
       </Switch>
 
       <Footer />
-    </Router>
+    </Router >
 
   );
 }
