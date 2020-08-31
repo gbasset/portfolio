@@ -19,7 +19,8 @@ export default function Contacts() {
         setMail(mail)
     }
 
-
+    //https://blog.mailtrap.io/react-send-email/
+    //https://www.emailjs.com/docs/sdk/installation/
     // const handleSubmit = async (e) => {
     //     e.preventDefault()
     //     const email = mail.email
