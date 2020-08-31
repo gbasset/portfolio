@@ -17,9 +17,8 @@ export default function Home() {
     const path = useLocation()
     const [isWritteFirst, setisWritteFirst] = useState(false);
             useEffect(()=>{
-           if(path.pathname !== "/#/"){
-               setTimeout(()=>setisWritteFirst( !isWritteFirst), 4000)
-           }
+               console.log('', path);
+               setTimeout(()=>setisWritteFirst( !isWritteFirst), 2000)
             },[])
     return (
         <div className="contain">

@@ -3,11 +3,11 @@
     grid-template-columns: 4fr 4fr;
     justify-content: left;
     margin-top: 40px;
-    background: #313552;
+    /* background: #313552; */
     position: sticky;
     width: 100%;
     color: #ffffff;
-    box-shadow: 0 3px 12px 8px rgb(46 51 83);
+    box-shadow: -10px -13px 4px -9px rgb(46 51 83);
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
@@ -50,10 +50,13 @@
 }
 
 .copy {
-    cursor: pointer;
+    color: white;
     font-size: 17px;
     text-align: center;
     margin: 16px auto 0px auto;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 nav ul li {

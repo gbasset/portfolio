@@ -22,10 +22,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div></div>
-                <p className="copy"> &copy; Basset Gaëtan {date.getFullYear()} , Tous droits réservés.</p>
+
 
             </div>
+            <p className="copy"> &copy; Basset Gaëtan {date.getFullYear()} , Tous droits réservés.</p>
         </>
     )
 }

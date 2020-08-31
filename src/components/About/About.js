@@ -1,5 +1,6 @@
 import React from 'react'
-import img from "../../Assets/images/téléchargement.png"
+import udemy from "../../Assets/logos/udemy_logo_icon_144775.png"
+import openClassroom from "../../Assets/logos/Logo_OpenClassrooms.png"
 import './About.css'
 export default function About() {
     return (
@@ -21,23 +22,28 @@ export default function About() {
             </div>
             <div>
                 <h2>Mes outils</h2>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript Es6</li>
-                    <li>Node JS</li>
-                    <li>ReactJS</li>
-                    <li>Bootstrap</li>
-                    <li>JQuery</li>
-                    <li>Vs Code</li>
+                <ul className="list-tags-outils">
+                    <li>Html <i className="fab fa-html5"></i></li>
+                    <li>Css <i className="fab fa-css3-alt"></i></li>
+                    <li>JavaScript <i className="fab fa-js"></i></li>
+                    <li>Node JS <i className="fab fa-node"></i></li>
+                    <li>ReactJS <i className="fab fa-react"></i></li>
+                    <li>Bootstrap <i className="fab fa-bootstrap"></i></li>
+
+                    <li>Vs Code <img src="https://img.icons8.com/ios-filled/500/000000/visual-studio-logo.png" alt="visual studio icon" />
+                    </li>
                 </ul>
             </div>
             <div>
                 <h2>Formations</h2>
-                <ul>
-                    <li>Wild Code School</li>
-                    <li>Udemy</li>
-                    <li>LALALA</li>
+                <ul className="list-tags-format">
+                    <li>Développeur Web et Web Mobile - Wild Code School Paris <img className="wild" src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_50/v1/static/irjoy97aq0eol8bf6959" alt="wild code school logo" /></li>
+                    <li>JavaScript : ES6  <img className="udemy" src={udemy} alt="udemy logo" /></li>
+                    <li>React A à Z (React Hooks)  <img className="udemy" src={udemy} alt="udemy logo" /></li>
+                    <li>Node.js / Express.js / JWT / Mongoose par la pratique   <img className="udemy" src={udemy} alt="udemy logo" /></li>
+                    <li>Bootstrap 4  <img className="udemy" src={udemy} alt="udemy logo" /></li>
+                    <li>Apprenez à créer votre site web avec HTML5 et CSS3 - OpenClassRooms <img className="openClass" src={openClassroom} alt="openClassroom logo" /></li>
+                    <li>Comprendre le web - OpenClassRooms  <img className="openClass" src={openClassroom} alt="openClassroom logo" /></li>
                 </ul>
             </div>
         </div>
