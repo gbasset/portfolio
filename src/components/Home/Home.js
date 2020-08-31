@@ -24,7 +24,7 @@ export default function Home() {
                 
                 fetch("/.netlify/functions/hello" )
                   .then(response => response.json())
-                  .then(json => console.log(json))
+                //   .then(json => console.log(json))
               }
               useEffect(() => handleClick(), [])
     return (

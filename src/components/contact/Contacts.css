@@ -1,0 +1,40 @@
+.containerForm {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.containerForm div textarea {
+    margin: auto;
+}
+
+.btn-send {
+    cursor: pointer;
+    margin: auto;
+    height: 80px;
+    border-radius: 0;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1px;
+    white-space: normal;
+    vertical-align: top;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .4s ease;
+    background-color: #1f2235;
+    border: 1px solid rgba(255, 203, 132, 0.9);
+    color: rgba(255, 203, 132, 0.9);
+    text-transform: uppercase;
+}
+
+.btn-send:hover {
+    color: #1f2235;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 203, 132, 0.9);
+}
