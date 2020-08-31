@@ -34,8 +34,8 @@ export default function Home() {
             options={{
                 autoStart: true,
                 loop: true,
-                deleteSpeed: 50,
-                changeDelay: 85
+                deleteSpeed: 5,
+                changeDelay: 2
               }}
             onInit={(typewriter) => {
                 typewriter.typeString(`Bonjour, moi c'est Gaëtan .`)

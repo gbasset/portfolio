@@ -1,0 +1,60 @@
+.propos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+}
+
+.photoProfil {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: url("../../Assets/images/téléchargement.png");
+    background-repeat: no-repeat;
+    background-position: 43% 0px;
+    background-size: cover;
+    position: relative;
+    margin-top: -4px;
+}
+
+.rightContainer {
+    width: 80%;
+}
+
+.propos p {
+    padding: 35px 95px 35px 35px;
+    margin: auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.propos ul {
+    list-style-type: none;
+    font-family: 'Archivo', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .propos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+    }
+    .rightContainer {
+        width: 100%;
+    }
+    .photoProfil {
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: url("../../Assets/images/téléchargement.png");
+        background-repeat: no-repeat;
+        background-position: 43% 0px;
+        background-size: cover;
+        position: relative;
+        margin: 15px auto 2px auto;
+    }
+}

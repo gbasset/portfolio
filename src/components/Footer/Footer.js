@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
 
                 <div></div>
-                <p className="copy">Intégration et developpement &copy; Basset Gaëtan {date.getFullYear()}</p>
+                <p className="copy"> &copy; Basset Gaëtan {date.getFullYear()} , Tous droits réservés.</p>
 
             </div>
         </>
