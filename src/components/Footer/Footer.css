@@ -32,6 +32,11 @@
     justify-content: space-evenly;
 }
 
+.reseaux img {
+    position: relative;
+    top: 10px;
+}
+
 .fa {
     border-radius: 50%;
     width: 28px;
@@ -44,7 +49,7 @@
     color: white;
 }
 
-.fa-github {
+.github {
     background: #070707;
     color: white;
 }

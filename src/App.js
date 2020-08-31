@@ -10,6 +10,7 @@ import About from './components/About/About';
 import Page404 from './components/Page404';
 import ProjectItem from './components/Projects/ProjectItem';
 import Footer from './components/Footer/Footer';
+import Contacts from './components/contact/Contacts';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/projectItem" component={ProjectItem} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contacts} />
         <Route component={Page404} />
       </Switch>
 

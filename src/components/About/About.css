@@ -40,7 +40,7 @@
     width: 350px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 20px auto;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
@@ -79,7 +79,7 @@
     width: 55%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 15px auto;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
@@ -129,6 +129,18 @@
     margin-bottom: 2px;
     width: 35px !important;
     top: 10px;
+}
+
+.containerHight a {
+    text-decoration: none;
+}
+
+.git {
+    position: relative !important;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    width: 35px !important;
+    top: -2px !important;
 }
 
 @media (max-width: 900px) {
