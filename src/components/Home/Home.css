@@ -59,6 +59,12 @@
     right: 8%;
 }
 
+.demo {
+    position: relative;
+    top: 15%;
+    right: 50%;
+}
+
 .demo a {
     cursor: none;
     position: absolute;
@@ -336,6 +342,11 @@
         width: 300px;
         margin: auto;
         max-height: 30vh;
+    }
+    .demo {
+        position: relative;
+        top: 15%;
+        right: 40%;
     }
     .demo a {
         position: absolute;
