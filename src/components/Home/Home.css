@@ -220,12 +220,19 @@
     position: relative;
 }
 
+.text h2 {
+    margin-top: 10px;
+    font-size: 48px;
+}
+
 .text p {
-    padding: 25px;
+    padding: 15px 25px;
     width: 60%;
     margin: auto;
-    text-align: left;
-    font-size: 20px;
+    text-align: justify;
+    line-height: 34px;
+    font-size: 25px;
+    color: whitesmoke;
 }
 
 .annimationTechnos {
@@ -256,7 +263,7 @@
 
 .containerLanguages img {
     margin: 5% auto;
-    width: 100%;
+    display: flex;
 }
 
 .imgLanguages {
@@ -291,6 +298,29 @@
     text-align: right;
     font-size: 55px;
 } */
+
+.containerProjects {
+    height: 50vh;
+    display: flex;
+    background: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position: 25% -15%;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectHome {
+    margin-top: 8%;
+    height: 220px;
+    width: 290px;
+    background-color: rgba(0, 0, 0, 0.335);
+}
 
 @media (max-width: 900px) {
     .image-dev img {
@@ -332,10 +362,10 @@
         overflow: hidden;
     }
     .containerLanguages img {
-        height: 25vh;
+        height: 17vh;
         overflow: hidden;
-        margin: auto;
-        width: 100%;
+        margin: 5px auto;
+        display: flex;
     }
     .imgLanguages img {
         text-align: center;
@@ -358,5 +388,18 @@
         height: 39vh;
         overflow: hidden;
         font-family: 'Archivo', sans-serif;
+    }
+    .containerProjects {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        justify-content: space-evenly;
+    }
+    .projectHome {
+        margin: auto;
+        height: 150px;
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.335);
     }
 }
