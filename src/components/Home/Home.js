@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Home.css'
 import img from "../../Assets/images/undraw_code_thinking_1jeh.svg"
 import logoReact from "../../Assets/logos/icons8-react.svg"
@@ -13,6 +14,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 import { NavLink, useLocation } from 'react-router-dom'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import projectsToHome from './../../Assets/projectsToHome';
 export default function Home() {
     const path = useLocation()
     const [isWritteFirst, setisWritteFirst] = useState(false);
@@ -27,6 +29,9 @@ export default function Home() {
         //   .then(json => console.log(json))
     }
     useEffect(() => handleClick(), [])
+    useEffect(() => {
+        document.documentElement.scrollTop = 0
+    }, [])
     return (
         <div className="contain">
             <div className="header-home">
@@ -210,7 +215,7 @@ export default function Home() {
 
                     </p>
                     <p>
-                        Ce site web est à la fois mon curiculum vitae de developpeur web, mais également un espace de création où je teste de nouvelles choses sur le plan du developpement web et de l'intégration.
+                        Ce site web est mon curiculum vitae de developpeur web, mais il est  également un espace de création où je teste de nouvelles choses sur le plan du developpement web et de l'intégration.
                         Il constitue donc également un projet à part entière dans les différents projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
                 </p>
                 </div>
@@ -224,18 +229,25 @@ export default function Home() {
                     animateOnce={true}
                 >
                     <div className="containerProjects">
-                        <div className="projectHome">
-                            Projet 1
-                            Restaurant
-                        </div>
-                        <div className="projectHome">
-                            Projet 1
-                            Cinéma
-                        </div>
-                        <div className="projectHome">
-                            Projet 1
-                            Jules et Lily
-                        </div>
+
+                        {projectsToHome.map((x, i) =>
+                            <div className="projectHome" key={i}>
+
+                                <Link className='lien'
+                                    to={{
+                                        pathname: `projectItem`,
+                                        state: {
+                                            item: x
+                                        }
+
+                                    }}>
+                                    <img className="pictureProjectHome" width="100" src={x.picture} alt="" />
+                                    <p className="nameProjectsHome">  {x.label.toLocaleUpperCase()}</p>
+                                    <button className="btn"> <i className="fas fa-eye"></i></button>
+                                </Link>
+                            </div>
+                        )}
+
 
                     </div>
                 </ScrollAnimation>

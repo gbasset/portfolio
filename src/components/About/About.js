@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import udemy from "../../Assets/logos/udemy_logo_icon_144775.png"
 import openClassroom from "../../Assets/logos/Logo_OpenClassrooms.png"
 import netifly from "../../Assets/logos/iconfinder_netlify_4691413.png"
 import pdf from "../../Assets/gaetancv.pdf"
 import './About.css'
 export default function About() {
+    useEffect(() => {
+        document.documentElement.scrollTop = 0
+    }, [])
     return (
         <div className="containerHight">
             {/* <div className="construction">

@@ -1,6 +1,6 @@
 .footer {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
+    /* display: grid;
+    grid-template-columns: 4fr 4fr; */
     justify-content: left;
     margin-top: 40px;
     /* background: #313552; */

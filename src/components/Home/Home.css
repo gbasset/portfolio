@@ -231,7 +231,7 @@
     margin: auto;
     text-align: justify;
     line-height: 34px;
-    font-size: 25px;
+    font-size: 18px;
     color: whitesmoke;
 }
 
@@ -317,9 +317,24 @@
 
 .projectHome {
     margin-top: 8%;
-    height: 220px;
+    height: 200px;
     width: 290px;
     background-color: rgba(0, 0, 0, 0.335);
+}
+
+.nameProjectsHome {
+    z-index: 1000;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 10px;
+    background-color: #d5a26f2e;
+    padding: 2px 1px;
+}
+
+.pictureProjectHome {
+    width: 100%;
+    height: 200px
 }
 
 @media (max-width: 900px) {
@@ -401,5 +416,17 @@
         height: 150px;
         width: 60%;
         background-color: rgba(0, 0, 0, 0.335);
+    }
+    .nameProjectsHome {
+        z-index: 1000;
+        text-align: center;
+        font-size: 28px;
+        border-radius: 10px;
+        background-color: #d5a26f2e;
+        padding: 2px 1px;
+    }
+    .pictureProjectHome {
+        width: 100%;
+        height: 150px
     }
 }

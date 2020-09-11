@@ -23,6 +23,9 @@ export default function Projects() {
             setSmallScreen(false);
         }
     }
+    useEffect(() => {
+        document.documentElement.scrollTop = 0
+    }, [])
     return (
         <div className="containerHight">
 

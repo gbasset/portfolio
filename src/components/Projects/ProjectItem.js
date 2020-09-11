@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 import AwesomeSlider from 'react-awesome-slider';
@@ -11,6 +11,9 @@ export default function ProjectItem() {
     const itemN = item.state && item.state.item
     console.log("itemN", itemN);
     const AutoplaySlider = withAutoplay(AwesomeSlider);
+    useEffect(() => {
+        document.documentElement.scrollTop = 0
+    }, [])
     return (
         <div className="containerHight">
             <div className="containerProject">
