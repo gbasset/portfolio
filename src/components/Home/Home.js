@@ -19,7 +19,6 @@ export default function Home() {
     const path = useLocation()
     const [isWritteFirst, setisWritteFirst] = useState(false);
     useEffect(() => {
-        console.log('', path);
         setTimeout(() => setisWritteFirst(!isWritteFirst), 2000)
     }, [])
     const handleClick = () => {
@@ -78,7 +77,55 @@ export default function Home() {
                     </>
                 }
             </div>
+            <ScrollAnimation
+                animateIn='fadeIn'
+                animateOut='fadeIn'
+                delay={100}
+                animateOnce={true}
+            >
+                <div className="text">
+                    <h2>Bienvenue sur mon portfolio</h2>
+                    <p>
 
+                    </p>
+                    <p>
+                        Ce site web est mon curiculum vitae de developpeur web, mais il est  également un espace de création où je teste de nouvelles choses sur le plan du developpement web et de l'intégration.
+                        Il constitue donc également un projet à part entière dans les différents projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
+                </p>
+                </div>
+            </ScrollAnimation>
+            <div>
+
+                <ScrollAnimation
+                    animateIn='fadeIn'
+                    animateOut='fadeIn'
+                    delay={100}
+                    animateOnce={true}
+                >
+                    <div className="containerProjects">
+                        <h2>Projets</h2>
+                        {projectsToHome.map((x, i) =>
+                            <div className="projectHome" key={i}>
+
+                                <Link className='lien'
+                                    to={{
+                                        pathname: `projectItem`,
+                                        state: {
+                                            item: x
+                                        }
+
+                                    }}>
+                                    <img className="pictureProjectHome" src={x.picture} alt="" />
+                                    <p className="nameProjectsHome">  {x.label.toLocaleUpperCase()}</p>
+                                    <button className="btn"> <i className="fas fa-eye"></i></button>
+                                </Link>
+                            </div>
+                        )}
+
+
+                    </div>
+                </ScrollAnimation>
+            </div>
             <div className="containerLanguages" >
                 <ScrollAnimation
                     animateIn='bounceInUp'
@@ -203,63 +250,20 @@ export default function Home() {
                     </ScrollAnimation>
                 </div>
             </div>
-            <ScrollAnimation
-                animateIn='fadeIn'
-                animateOut='fadeIn'
-                delay={100}
-                animateOnce={true}
-            >
-                <div className="text">
-                    <h2>Bienvenue sur mon portfolio</h2>
-                    <p>
-
-                    </p>
-                    <p>
-                        Ce site web est mon curiculum vitae de developpeur web, mais il est  également un espace de création où je teste de nouvelles choses sur le plan du developpement web et de l'intégration.
-                        Il constitue donc également un projet à part entière dans les différents projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
-                </p>
-                </div>
-            </ScrollAnimation>
-            <div>
-
-                <ScrollAnimation
-                    animateIn='fadeIn'
-                    animateOut='fadeIn'
-                    delay={100}
-                    animateOnce={true}
-                >
-                    <div className="containerProjects">
-
-                        {projectsToHome.map((x, i) =>
-                            <div className="projectHome" key={i}>
-
-                                <Link className='lien'
-                                    to={{
-                                        pathname: `projectItem`,
-                                        state: {
-                                            item: x
-                                        }
-
-                                    }}>
-                                    <img className="pictureProjectHome" width="100" src={x.picture} alt="" />
-                                    <p className="nameProjectsHome">  {x.label.toLocaleUpperCase()}</p>
-                                    <button className="btn"> <i className="fas fa-eye"></i></button>
-                                </Link>
-                            </div>
-                        )}
 
 
-                    </div>
-                </ScrollAnimation>
+            <div className="contactHome">
+                <Link
+                    to={{
+                        pathname: `contact`,
+
+                    }}>
+                    <button className="btn-contact">
+                        Contacts
+                    </button>
+                </Link>
             </div>
-            <div className="text">
-                <p>
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa earum quibusdam consequuntur autem harum delectus dolore expedita, optio, consequatur sed exercitationem neque, vitae excepturi voluptatibus error. Odio, excepturi beatae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, illo quisquam blanditiis quam dolore libero impedit error. Cumque in sed, suscipit pariatur possimus accusantium excepturi incidunt quae id. Exercitationem explicabo tempora repellat eaque non illo dignissimos nostrum, nobis deleniti minima, velit sit inventore quidem autem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio vitae voluptatum, optio est esse? Dicta eaque aliquam vel, architecto optio, distinctio omnis obcaecati in amet error libero debitis delectus incidunt et necessitatibus quasi nemo veniam totam placeat odio! Voluptas, maxime ullam corporis, ut, quia dicta animi distinctio tenetur expedita alias quo perferendis facere libero quibusdam. Modi qui nihil molestias distinctio, aliquid ex quaerat explicabo id quo sapiente tenetur soluta itaque rem amet possimus. Hic sint non modi vel, deleniti nisi nulla. Soluta, at quo?
-                </p>
-            </div>
         </div>
     )
 }

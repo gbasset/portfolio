@@ -1,24 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
-export default function Footer() {
+export default function Footer({ match }) {
+    const [isHome, SetIsHome] = useState(false)
+    useEffect(() => {
+        if (window.location.href.includes('/Home')) {
+            SetIsHome(true)
+        }
+        else {
+            SetIsHome(false)
+        }
+    }, [match])
+    console.log("isHome", isHome);
     const date = new Date()
     return (
         <>
             <div className="footer">
                 <nav >
                     <ul>
-                        {/* <li>Accueil </li>
-                    <li>Projets</li> */}
-                        <li>
-                            <Link className='lien'
-                                to={{
-                                    pathname: `contact`,
+                        {
+                            !isHome &&
+                            <li>
+                                <Link className='lien'
+                                    to={{
+                                        pathname: `contact`,
 
-                                }}>
-                                Me contacter
+                                    }}>
+                                    Me contacter
                             </Link>
-                        </li>
+                            </li>
+                        }
                     </ul>
                 </nav>
 

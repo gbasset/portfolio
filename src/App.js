@@ -22,7 +22,7 @@ function App() {
     >
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/Home" component={Home} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/projectItem" component={ProjectItem} />
         <Route exact path="/about" component={About} />

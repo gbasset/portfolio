@@ -50,10 +50,27 @@
     padding: 3px;
 }
 
+.contactHome {
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    background: url(../../Assets//images/pavan-trikutam-71CjSSB83Wo-unsplash.jpg);
+    background-position: 139% 91px;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
 .btn-more {
     margin: auto;
-    height: 80px;
-    border-radius: 0;
+    height: 57px;
+    border-radius: 15px;
     padding: 8px 20px;
     text-align: center;
     font-size: 15px;
@@ -71,6 +88,12 @@
     text-transform: uppercase;
 }
 
+.btn-more:hover {
+    color: #1f2235;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 203, 132, 0.9);
+}
+
 .containerProject a {
     text-decoration: none;
 }
@@ -84,12 +107,6 @@
     margin: 40px auto;
     text-align: center;
     border-radius: 4px;
-}
-
-.btn-more:hover {
-    color: #1f2235;
-    border: 1px solid #ddd;
-    background-color: rgba(255, 203, 132, 0.9);
 }
 
 .devices p {
