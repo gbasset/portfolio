@@ -1,17 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import './Footer.css'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { Context } from '../../Context/Context'
 export default function Footer({ match }) {
+    const {
+        locationUrl
+    } = useContext(Context)
     const [isHome, SetIsHome] = useState(false)
+    const history = useHistory()
     useEffect(() => {
-        if (window.location.href.includes('/Home')) {
+        if (locationUrl && locationUrl.includes('/Home')) {
             SetIsHome(true)
         }
         else {
             SetIsHome(false)
         }
-    }, [match])
-    console.log("isHome", isHome);
+    }, [locationUrl])
+    console.log('locationUrl', locationUrl);
+
     const date = new Date()
     return (
         <>

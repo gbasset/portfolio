@@ -1,11 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import './ProjectItem.css'
+import { Context } from '../../Context/Context'
 export default function ProjectItem() {
+    const {
+        locationUrl,
+        setLocationUrl
+    } = useContext(Context)
     const item = useLocation()
     console.log(item);
     const itemN = item.state && item.state.item
@@ -13,6 +18,7 @@ export default function ProjectItem() {
     const AutoplaySlider = withAutoplay(AwesomeSlider);
     useEffect(() => {
         document.documentElement.scrollTop = 0
+        setLocationUrl(window.location.href)
     }, [])
     return (
         <div className="containerHight">

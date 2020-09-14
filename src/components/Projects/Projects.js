@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import projectsList from '../../Assets/projectList'
 import { Link } from 'react-router-dom'
 import './Projects.css'
+import { Context } from '../../Context/Context'
 export default function Projects() {
+    const {
+        locationUrl,
+        setLocationUrl
+    } = useContext(Context)
     const [smallScreen, setSmallScreen] = useState(false);
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 900px)");
@@ -25,6 +30,7 @@ export default function Projects() {
     }
     useEffect(() => {
         document.documentElement.scrollTop = 0
+        setLocationUrl(window.location.href)
     }, [])
     return (
         <div className="containerHight">

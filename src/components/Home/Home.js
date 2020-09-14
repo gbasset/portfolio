@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import img from "../../Assets/images/undraw_code_thinking_1jeh.svg"
@@ -15,7 +15,12 @@ import { NavLink, useLocation } from 'react-router-dom'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import projectsToHome from './../../Assets/projectsToHome';
+import { Context } from '../../Context/Context'
 export default function Home() {
+    const {
+        locationUrl,
+        setLocationUrl
+    } = useContext(Context)
     const path = useLocation()
     const [isWritteFirst, setisWritteFirst] = useState(false);
     useEffect(() => {
@@ -30,6 +35,7 @@ export default function Home() {
     useEffect(() => handleClick(), [])
     useEffect(() => {
         document.documentElement.scrollTop = 0
+        setLocationUrl(window.location.href)
     }, [])
     return (
         <div className="contain">

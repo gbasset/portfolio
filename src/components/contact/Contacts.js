@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import './Contacts.css'
 import emailjs from 'emailjs-com';
+import { Context } from '../../Context/Context'
 export default function Contacts() {
+    const {
+        locationUrl,
+        setLocationUrl
+    } = useContext(Context)
     const [mail, setMail] = useState('')
     const [msg, setMsg] = useState('')
     const [name, setName] = useState('')
@@ -24,7 +29,9 @@ export default function Contacts() {
     }, [])
     useEffect(() => {
         document.documentElement.scrollTop = 0
+        setLocationUrl(window.location.href)
     }, [])
+
     //https://blog.mailtrap.io/react-send-email/
     //https://www.emailjs.com/docs/sdk/installation/
     // const handleSubmit = async (e) => {
