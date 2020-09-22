@@ -90,13 +90,10 @@ export default function Home() {
                 animateOnce={true}
             >
                 <div className="text">
-                    <h2>Bienvenue sur mon portfolio</h2>
-                    <p>
-
-                    </p>
+                    <h2 >Bienvenue sur mon portfolio</h2>
                     <p>
                         Ce site web est mon curiculum vitae de developpeur web, mais il est  également un espace de création où je teste de nouvelles choses sur le plan du developpement web et de l'intégration.
-                        Il constitue donc également un projet à part entière dans les différents projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
+                        Il constitue donc également un projet à part entière au sein des différents projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
                 </p>
                 </div>
             </ScrollAnimation>
@@ -109,7 +106,7 @@ export default function Home() {
                     animateOnce={true}
                 >
                     <div className="containerProjects">
-                        <h2>Projets</h2>
+                        <h2 className="project-title ">Projets</h2>
                         {projectsToHome.map((x, i) =>
                             <div className="projectHome" key={i}>
 
@@ -123,7 +120,6 @@ export default function Home() {
                                     }}>
                                     <img className="pictureProjectHome" src={x.picture} alt="" />
                                     <p className="nameProjectsHome">  {x.label.toLocaleUpperCase()}</p>
-                                    <button className="btn"> <i className="fas fa-eye"></i></button>
                                 </Link>
                             </div>
                         )}

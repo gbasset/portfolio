@@ -67,6 +67,11 @@
     justify-content: space-around;
 }
 
+.contactHome a {
+    display: flex;
+    text-decoration: none;
+}
+
 .btn-more {
     margin: auto;
     height: 57px;
@@ -130,5 +135,21 @@
         height: auto;
         max-height: 200px;
         overflow: hidden;
+    }
+    .contactHome {
+        margin: auto;
+        height: 50vh;
+        display: flex;
+        background: url(../../Assets//images/pavan-trikutam-71CjSSB83Wo-unsplash.jpg);
+        background-position: -24px 27px;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+        color: black;
+        display: flex;
+        justify-content: space-around;
     }
 }

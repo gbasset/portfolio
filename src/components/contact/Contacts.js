@@ -73,7 +73,7 @@ export default function Contacts() {
     return (
         <div className="containerHight" >
             <form className="form-control">
-                <h1>Contact</h1>
+                <h1 className="title-contact">Contactez moi</h1>
                 {/* <label htmlFor="email"> Email :</label>
             <input id="email" type="email" value={mail.email} onChange={handleChange} /> */}
                 {/* <button type="submit">Go</button> */}
