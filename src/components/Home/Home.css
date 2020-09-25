@@ -79,7 +79,6 @@
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-    background-color: rgb(255 247 247 / 14%);
 }
 
 /* .demo a:hover {
@@ -366,7 +365,7 @@
     transition: all .4s ease;
     background-color: #93939345;
     border: 1px solid rgb(255 255 255 / 89%);
-    color: #ffffffa6;
+    color: #ffffff;
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
@@ -446,7 +445,7 @@
         font-family: 'Archivo', sans-serif;
     }
     .containerProjects {
-        height: 90vh;
+        height: 92vh;
         display: flex;
         flex-direction: column;
         color: black;
@@ -473,6 +472,8 @@
     }
     .project-title {
         text-align: center;
+        width: 50%;
+        margin: 2px auto;
         font-size: 42px;
         letter-spacing: 5px;
         position: relative;

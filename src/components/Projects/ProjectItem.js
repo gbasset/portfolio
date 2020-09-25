@@ -12,9 +12,9 @@ export default function ProjectItem() {
         setLocationUrl
     } = useContext(Context)
     const item = useLocation()
-    console.log(item);
+
     const itemN = item.state && item.state.item
-    console.log("itemN", itemN);
+
     const AutoplaySlider = withAutoplay(AwesomeSlider);
     useEffect(() => {
         document.documentElement.scrollTop = 0

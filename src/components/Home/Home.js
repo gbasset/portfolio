@@ -28,8 +28,8 @@ export default function Home() {
     }, [])
     const handleClick = () => {
 
-        fetch("/.netlify/functions/hello")
-            .then(response => response.json())
+        // fetch("/.netlify/functions/hello")
+        //     .then(response => response.json())
         //   .then(json => console.log(json))
     }
     useEffect(() => handleClick(), [])
@@ -78,7 +78,7 @@ export default function Home() {
                 <a><span></span><span></span><span></span>Scroll</a>
                 </section> */}
                         <section id="section10" className="demo">
-                            <a href="#thanks"><span></span>Scroll</a>
+                            <a href="#"><span></span>Scroll</a>
                         </section>
                     </>
                 }

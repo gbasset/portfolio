@@ -16,7 +16,6 @@ export default function Footer({ match }) {
             SetIsHome(false)
         }
     }, [locationUrl])
-    console.log('locationUrl', locationUrl);
 
     const date = new Date()
     return (
