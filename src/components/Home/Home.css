@@ -445,7 +445,7 @@
         font-family: 'Archivo', sans-serif;
     }
     .containerProjects {
-        height: 92vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         color: black;
