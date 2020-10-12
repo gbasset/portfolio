@@ -92,8 +92,8 @@ export default function Home() {
                 <div className="text">
                     <h2 >Bienvenue sur mon portfolio</h2>
                     <p>
-                        Ce site web est mon curiculum vitae de developpeur web, mais il est  également un espace de création où je teste de nouvelles choses sur le plan du developpement web et de l'intégration.
-                        Il constitue donc également un projet à part entière au sein des différents projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
+                        Ce site web est mon curiculum vitae de developpeur web, il recense quelques projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
+                        Je vous invite à les parcouris et à me faire des retours si vous le souhaitez.
                 </p>
                 </div>
             </ScrollAnimation>
