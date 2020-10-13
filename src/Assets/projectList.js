@@ -89,7 +89,7 @@ const projectsList = [
         key: 'Beer Project',
         label: 'Beer Project',
         picture: "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2ce794.png",
-        link: 'https://inbeerwetrust.netlify.app/#',
+        link: 'https://inbeerwetrust.netlify.app/#/',
         github: 'https://github.com/gbasset/beerProject',
         pictures: [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2ce794.png",
