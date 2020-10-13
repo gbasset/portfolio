@@ -89,7 +89,7 @@ const projectsList = [
         key: 'Beer Project',
         label: 'Beer Project',
         picture: "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2ce794.png",
-        link: '',
+        link: 'https://inbeerwetrust.netlify.app/#',
         github: 'https://github.com/gbasset/beerProject',
         pictures: [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2ce794.png",
@@ -97,10 +97,10 @@ const projectsList = [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2cfccf.png",
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2d51a1.png",
         ],
-        category: ['React', 'JavaScript', 'Css', 'Punk Api'],
+        category: ['React', 'JavaScript', 'Css', 'Punk Api', 'LocalStorage'],
         keywords: ['shop', 'bière'],
         devices: ['Mobile', 'Desktop'],
-        infos: " Ce projet est né de l'envie de créer un site autour de la bière et de l'Api 'Punk API'. J'ai donc décidé de faire un e-shop factice autour des données de cette Api et d'y ajouter la notion de prix. Le site permet de rechercher des bières par nom et catégories, de créer un panier et de le modifier, de créer une liste de favoris afin de retrouver ses bières préférése. ",
+        infos: " Ce projet est né de l'envie de créer un site autour de la bière et de l'Api 'Punk API'. J'ai donc décidé de faire un e-shop factice autour des données de cette Api et d'y ajouter la notion de prix. Le site permet de rechercher des bières par nom et catégories, de créer un panier et de le modifier, de créer une liste de favoris afin de retrouver ses bières préférése. On peut egalement effectuer l'achat du panier ou retrouver son panier plus tard car celui-ci est stocké dans le localstorage ",
     },
     {
         key: 'game pendu',
