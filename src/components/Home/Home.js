@@ -16,6 +16,8 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import projectsToHome from './../../Assets/projectsToHome';
 import { Context } from '../../Context/Context'
+import Carousel from './../Caroussel/Carousel';
+import projectList from '../../Assets/projectList'
 export default function Home() {
     const {
         locationUrl,
@@ -23,6 +25,9 @@ export default function Home() {
     } = useContext(Context)
     const path = useLocation()
     const [isWritteFirst, setisWritteFirst] = useState(false);
+    const [arrayOfPic, setArrayOfPic] = useState()
+    const [firstRender, setFirstRender] = useState(true)
+    const [currentIndex, setCurrentIndex] = useState()
     useEffect(() => {
         setTimeout(() => setisWritteFirst(!isWritteFirst), 2000)
     }, [])
@@ -36,6 +41,44 @@ export default function Home() {
     useEffect(() => {
         document.documentElement.scrollTop = 0
         setLocationUrl(window.location.href)
+    }, [])
+    const sortTheArrayOfPic = (e) => {
+        if (firstRender) {
+            const newArrayOfPic = projectList.slice(0, 3)
+            setCurrentIndex(0)
+            setArrayOfPic(newArrayOfPic)
+        } else {
+            const checkIndex = (checked) => {
+                if (checked === projectList.length - 1) {
+                    const newArr = [projectList[projectList.length - 1], projectList[0], projectList[1]]
+                    setArrayOfPic(newArr)
+                }
+                else if (checked === projectList.length - 2) {
+                    const newArr = [projectList[checked], projectList[projectList.length - 1], projectList[0]]
+                    setArrayOfPic(newArr)
+                }
+                else {
+                    const newArrayOfPic = projectList.slice(checked, checked + 3)
+                    setArrayOfPic(newArrayOfPic)
+                }
+            }
+            if (e === 'left') {
+                let current = currentIndex + 1
+                current < projectList.length ? current = currentIndex + 1 : current = 0
+                checkIndex(current)
+                setCurrentIndex(current)
+            }
+            else {
+                let current = currentIndex - 1
+                current = current !== -1 ? current : projectList.length - 1
+                checkIndex(current)
+                setCurrentIndex(current)
+            }
+        }
+    }
+    useEffect(() => {
+        sortTheArrayOfPic("right")
+        setFirstRender(false)
     }, [])
     return (
         <div className="contain">
@@ -252,7 +295,12 @@ export default function Home() {
                     </ScrollAnimation>
                 </div>
             </div>
-
+            <div>
+                <Carousel
+                    arrayOfPic={arrayOfPic}
+                    sortTheArrayOfPic={(e) => sortTheArrayOfPic(e)}
+                />
+            </div>
 
             <div className="contactHome">
                 <Link
