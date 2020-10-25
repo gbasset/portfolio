@@ -27,6 +27,7 @@ export default function Home() {
     const [isWritteFirst, setisWritteFirst] = useState(false);
     const [arrayOfPic, setArrayOfPic] = useState()
     const [firstRender, setFirstRender] = useState(true)
+    const [isChange, setisChange] = useState(false)
     const [currentIndex, setCurrentIndex] = useState()
     useEffect(() => {
         setTimeout(() => setisWritteFirst(!isWritteFirst), 2000)
@@ -43,6 +44,7 @@ export default function Home() {
         setLocationUrl(window.location.href)
     }, [])
     const sortTheArrayOfPic = (e) => {
+        setisChange(true)
         if (firstRender) {
             const newArrayOfPic = projectList.slice(0, 3)
             setCurrentIndex(0)
@@ -80,6 +82,11 @@ export default function Home() {
         sortTheArrayOfPic("right")
         setFirstRender(false)
     }, [])
+    useEffect(() => {
+        if (isChange) {
+            setTimeout(() => setisChange(false), 800)
+        }
+    }, [isChange])
     return (
         <div className="contain">
             <div className="header-home">
@@ -299,6 +306,7 @@ export default function Home() {
                 <Carousel
                     arrayOfPic={arrayOfPic}
                     sortTheArrayOfPic={(e) => sortTheArrayOfPic(e)}
+                    isChange={isChange}
                 />
             </div>
 

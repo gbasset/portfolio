@@ -1,40 +1,86 @@
 .caroussel_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     height: 100vh;
+    margin: auto;
 }
 
 .caroussel_item_left {
-    height: 800px;
-    width: 20%;
-    background-color: rgb(20, 112, 216);
+    width: 25%;
+    display: flex;
+    margin: auto;
+    align-items: center;
 }
 
 .caroussel_item_center {
-    height: 800px;
-    width: 60%;
-    background-color: rgb(250, 250, 250);
+    width: 50%;
+    align-items: center;
+    display: flex;
+    margin: auto 20px;
 }
 
 .caroussel_item_right {
-    height: 800px;
-    width: 20%;
-    background-color: rgb(255, 40, 11);
+    width: 25%;
+    align-items: center;
+    display: flex;
+    margin: auto;
 }
 
 .caroussel_picture_center_container {
-    background-attachment: fixed;
-}
-
-.caroussel_picture_center_container img {
     max-width: 800px;
     max-height: 400px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
 }
 
-.caroussel_picture_container img {
+.caroussel_picture_container {
     max-width: 400px;
     max-height: 200px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.annim {
+    animation-name: AutoSlide;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        left: 0px;
+        /*1ère image*/
+    }
+    15% {
+        left: 0px;
+        /*idem pour attente*/
+    }
+    35% {
+        left: -150px;
+        /*2ème image*/
+    }
+    50% {
+        left: -150px;
+        /*idem pour attente*/
+    }
+    70% {
+        left: -300px;
+        /*3ème image*/
+    }
+    85% {
+        left: -300px;
+        /*idem pour attente*/
+    }
+    100% {
+        left: 0px;
+        /*1ère image*/
+    }
 }
