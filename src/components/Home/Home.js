@@ -29,6 +29,7 @@ export default function Home() {
     const [firstRender, setFirstRender] = useState(true)
     const [isChange, setisChange] = useState(false)
     const [currentIndex, setCurrentIndex] = useState()
+    const [direction, setDirection] = useState()
     useEffect(() => {
         setTimeout(() => setisWritteFirst(!isWritteFirst), 2000)
     }, [])
@@ -69,12 +70,15 @@ export default function Home() {
                 current < projectList.length ? current = currentIndex + 1 : current = 0
                 checkIndex(current)
                 setCurrentIndex(current)
+                setDirection('left')
+
             }
             else {
                 let current = currentIndex - 1
                 current = current !== -1 ? current : projectList.length - 1
                 checkIndex(current)
                 setCurrentIndex(current)
+                setDirection('right')
             }
         }
     }
@@ -83,9 +87,9 @@ export default function Home() {
         setFirstRender(false)
     }, [])
     useEffect(() => {
-        if (isChange) {
-            setTimeout(() => setisChange(false), 800)
-        }
+
+        setTimeout(() => setisChange(false), 500)
+
     }, [isChange])
     return (
         <div className="contain">
@@ -307,6 +311,7 @@ export default function Home() {
                     arrayOfPic={arrayOfPic}
                     sortTheArrayOfPic={(e) => sortTheArrayOfPic(e)}
                     isChange={isChange}
+                    direction={direction}
                 />
             </div>
 
