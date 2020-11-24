@@ -108,13 +108,13 @@ export default function Home() {
                                 changeDelay: 2
                             }}
                             onInit={(typewriter) => {
-                                typewriter.typeString(`Bonjour, moi c'est Gaëtan .`)
+                                typewriter.typeString(`Bonjour,moi c'est Gaëtan.`)
                                     .pauseFor(500)
-                                    .typeString('<br>Je suis Developpeur Web .')
+                                    .typeString('<br>Je suis Developpeur Web.')
                                     .pauseFor(500)
-                                    .deleteChars(25)
+                                    .deleteChars(24)
                                     //   .deleteAll()
-                                    .typeString('Bonne visite !')
+                                    .typeString('Bonne visite!')
                                     .pauseFor(500)
                                     .start();
 
@@ -147,7 +147,7 @@ export default function Home() {
                     <h2 >Bienvenue sur mon portfolio</h2>
                     <blockquote>
                         <p>
-                            `“ Ce site recense quelques projets personnels que j'ai entrepris seul mais également avec d'autres developpeurs. Je vous invite donc à les parcourir sur la page " Mes projets" et à me faire vos retours si vous le souhaitez . ”`
+                            “ Ce site recense quelques projets personnels que j'ai entrepris seul mais également avec d'autres developpeurs. Je vous invite donc à les parcourir sur la page " Mes projets" et à me faire vos retours si vous le souhaitez . ”
                 </p>
                     </blockquote>
                 </div>
