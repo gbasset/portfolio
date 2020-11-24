@@ -92,7 +92,7 @@ const projectsList = [
     {
         key: 'Beer Project',
         label: 'Beer Project',
-        picture: "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2ce794.png",
+        picture: "https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8cd6e5ea7.PNG",
         link: 'https://inbeerwetrust.netlify.app/#/',
         github: 'https://github.com/gbasset/beerProject',
         pictures: [
@@ -110,8 +110,8 @@ const projectsList = [
     {
         key: 'game pendu',
         label: 'Jeux du pendu',
-        picture: gamePict,
-        link: 'https://gbasset.github.io/jeux-du-pendu-js-Vanilla/',
+        picture: 'https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8a76e4fd1.PNG',
+        link: 'https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8a76e4fd1.PNG',
         github: 'https://github.com/gbasset/jeux-du-pendu-js-Vanilla',
         pictures: [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86da1ea.png",
@@ -165,7 +165,7 @@ const projectsList = [
         key: 'Le juste prix',
         label: 'Le juste prix',
         link: 'https://gbasset.github.io/JustPrice-Vanilla-Js/',
-        picture: justePrice,
+        picture: 'https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8d4e6b54e.PNG',
         github: 'https://github.com/gbasset/JustPrice-Vanilla-Js',
         category: ['Javascript', 'Html', 'Css'],
         keywords: ['javasript', 'jeux', 'game'],

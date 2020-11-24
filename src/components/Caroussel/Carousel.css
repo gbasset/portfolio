@@ -14,13 +14,18 @@
     background-attachment: fixed;
 }
 
+.carroussel_container p {
+    padding: 10px;
+    background-color: black;
+}
+
 .caroussel_item_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 60%;
 }
 
 .caroussel_item_left {
@@ -28,6 +33,7 @@
     display: flex;
     margin: auto;
     align-items: center;
+    cursor: pointer;
 }
 
 .caroussel_item_center {
@@ -35,6 +41,7 @@
     align-items: center;
     display: flex;
     margin: auto 20px;
+    cursor: pointer;
 }
 
 .caroussel_item_right {
@@ -42,6 +49,7 @@
     align-items: center;
     display: flex;
     margin: auto;
+    cursor: pointer;
 }
 
 .caroussel_picture_center_container {
@@ -91,4 +99,71 @@
 
 .annimRight {
     animation: rightAnnim 300ms ease-out;
+}
+
+.btn_project {
+    line-height: 1.125;
+    outline: none;
+    border-width: 2px;
+    border-style: none;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    background-color: #ffffff00;
+    font-size: 100px;
+}
+
+.btn_project i {
+    color: #f5f5dc;
+}
+
+.btn_project i:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.caroussel_section_button {
+    width: 80%;
+    position: relative;
+    bottom: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.carroussel_container h1 {
+    font-weight: 500;
+    margin-top: 37px;
+    font-size: 72px;
+    padding: 7px;
+    color: #f4f4db;
+    background-color: #6161614f;
+    font-family: 'IBM Plex Mono', monospace;
+    border-radius: 6px;
+}
+
+.caroussel_item_left div {
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+}
+
+.caroussel_item_center div {
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+}
+
+.caroussel_item_right div {
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+}
+
+@media (max-width: 900px) {
+    .carroussel_container {
+        display: none;
+    }
 }

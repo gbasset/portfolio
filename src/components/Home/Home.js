@@ -117,7 +117,6 @@ export default function Home() {
                                     .typeString('Bonne visite!')
                                     .pauseFor(500)
                                     .start();
-
                             }}
                         />
                     </div>
@@ -178,9 +177,16 @@ export default function Home() {
                                 </Link>
                             </div>
                         )}
-
-
                     </div>
+                    <div className="caroussel-custom">
+                        <Carousel
+                            arrayOfPic={arrayOfPic}
+                            sortTheArrayOfPic={(e) => sortTheArrayOfPic(e)}
+                            isChange={isChange}
+                            direction={direction}
+                        />
+                    </div>
+
                 </ScrollAnimation>
             </div>
             <div className="containerLanguages" >
@@ -307,14 +313,6 @@ export default function Home() {
                     </ScrollAnimation>
                 </div>
             </div>
-            {/* <div>
-                <Carousel
-                    arrayOfPic={arrayOfPic}
-                    sortTheArrayOfPic={(e) => sortTheArrayOfPic(e)}
-                    isChange={isChange}
-                    direction={direction}
-                />
-            </div> */}
 
             <div className="contactHome">
                 <Link
