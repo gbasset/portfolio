@@ -145,10 +145,11 @@ export default function Home() {
             >
                 <div className="text">
                     <h2 >Bienvenue sur mon portfolio</h2>
-                    <p>
-                        Ce site web est mon curiculum vitae de developpeur web, il recense quelques projets personnels que j'ai entreppris et que vous pourrez parcourir pendant toute la durée de votre visite sur ce site.
-                        Je vous invite à les parcouris et à me faire des retours si vous le souhaitez.
+                    <blockquote>
+                        <p>
+                            “ Ce site recense quelques projets personnels que j'ai entreppris seul et avec d'autres developpeurs , je vous invite à les parcourirs sur la page "projets" et à me faire vos retours si vous le souhaitez . ”
                 </p>
+                    </blockquote>
                 </div>
             </ScrollAnimation>
             <div>
@@ -306,14 +307,14 @@ export default function Home() {
                     </ScrollAnimation>
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <Carousel
                     arrayOfPic={arrayOfPic}
                     sortTheArrayOfPic={(e) => sortTheArrayOfPic(e)}
                     isChange={isChange}
                     direction={direction}
                 />
-            </div>
+            </div> */}
 
             <div className="contactHome">
                 <Link

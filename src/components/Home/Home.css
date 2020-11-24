@@ -217,6 +217,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 200px;
+    margin: 60px auto;
 }
 
 .text h2 {
@@ -230,8 +232,8 @@
     margin: auto;
     text-align: justify;
     line-height: 34px;
-    font-size: 18px;
-    color: whitesmoke;
+    font-size: 21px;
+    color: #f8d7ab;
 }
 
 .annimationTechnos {

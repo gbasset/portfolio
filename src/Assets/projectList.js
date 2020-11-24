@@ -66,7 +66,7 @@ const projectsList = [
         category: ['Html', 'Css', 'Javascript '],
         keywords: ['Javascript', 'Html', 'Css'],
         devices: ['Mobile', 'Desktop'],
-        infos: "Création d'un site de restauration afin de s'entrainer à différentes techniques de front-end. Le site est fait en Html / Css et avec Javascript Vanilla. Il permet de voir le menu, acceder à une gallerie d'image et de situer le restaurant sur une carte pour regarder les différentes manière d'accéder au restaurant. Le site est totalement responsive",
+        infos: "Création d'un site de restauration afin de s'entrainer à différentes techniques de front-end. Le site est fait en Html / Css et avec Javascript Vanilla. Il permet de voir le menu du restaurant, acceder à une gallerie d'images et de situer le restaurant sur une carte afin de trouver les transports pour accéder au restaurant. Le site est totalement responsive",
         id: 2
     },
     {
@@ -83,10 +83,10 @@ const projectsList = [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f757cb889.PNG",
 
         ],
-        category: ['React', 'NodeJs', 'JavaScript', 'Css', 'Leaflet'],
+        category: ['React', 'NodeJs', 'JavaScript', 'Css', 'Leaflet', 'Mongo DB'],
         keywords: ['nodeJS', 'React'],
         devices: ['Mobile', 'Desktop'],
-        infos: "Ce projet fais partie des projets du cursus de la formation de la Wild Code School en groupe. L'idée, de ce projet est de réaliser une application qui permette de géolocaliser un utilisateur pour qu'il puisse choisir des événements avec pour sujet le developpement autour de lui, ou des personnes de l'environnent IT qui désirent discuter avec d'autres personnes. Ce projet m'a permis de découvrir comment utiliser une API oppen source et découvrir la géolocalisation ",
+        infos: "Ce projet fais partie des projets du cursus de la formation de la Wild Code School en groupe. L'idée de ce projet est de réaliser une application qui permette de géolocaliser un utilisateur pour qu'il puisse choisir des événements avec pour sujet l'IT autour de lui, ou des personnes de l'environnent IT qui désirent discuter avec d'autres personnes. Ce projet m'a permis de découvrir comment utiliser une API oppen source et découvrir la géolocalisation ",
         id: 3
     },
     {
@@ -104,7 +104,7 @@ const projectsList = [
         category: ['React', 'JavaScript', 'Css', 'Punk Api', 'LocalStorage'],
         keywords: ['shop', 'bière'],
         devices: ['Mobile', 'Desktop'],
-        infos: " Ce projet est né de l'envie de créer un site autour de la bière et de l'Api 'Punk API'. J'ai donc décidé de faire un e-shop factice autour des données de cette Api et d'y ajouter la notion de prix. Le site permet de rechercher des bières par nom et catégories, de créer un panier et de le modifier, de créer une liste de favoris afin de retrouver ses bières préférése. On peut egalement effectuer l'achat du panier ou retrouver son panier plus tard car celui-ci est stocké dans le localstorage ",
+        infos: " Ce projet est né de l'envie de créer un site autour de la bière et de l'Api 'Punk API'. J'ai donc décidé de faire un e-shop factice autour des données de cette Api et d'y ajouter la notion de prix. Le site permet de rechercher des bières par noms et catégories, de créer un panier et de le modifier, de créer une liste de favoris afin de retrouver ses bières préférées. On peut egalement effectuer l'achat du panier ou retrouvecelui-ci plus tard car il est stocké dans le localstorage ",
         id: 4
     },
     {
@@ -119,10 +119,10 @@ const projectsList = [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86de1ce.png",
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86de8e9.png",
         ],
-        category: ['Javascript', 'Css', 'Html'],
+        category: ['Javascript', 'Css', 'Html', 'Canvas'],
         keywords: ["jeux", "game"],
         devices: ['Desktop'],
-        infos: "Ce projet est né de l'envie de me familiariser avec des notions de Javascript Vanilla comme la selection d'éléments, des fonctions diverses liés au langage, ainsi que Canvas SVG. C'est donc une copie du jeux 'Le pendu' , l'idée est de trouver mot avec un droit à l'erreur restraint. Le jeux m'a permis de mettre en pratique l'idée de garder en mémoire des informations, de communiquer avec le clavier de l'utilisateur et de retourner des messages d'erreurs à celui ci. ",
+        infos: "Ce projet est né de l'envie de me familiariser avec des notions de Javascript Vanilla pour maitriser le DOM . Ainsi il utilise la selection d'éléments dans le DOM, utilise des fonctions de bases de JavaScript ainsi que Canvas SVG. C'est donc une copie du jeux 'Le pendu' , le but étant de trouver un mot avec un droit à l'erreur restraint. Le jeux m'a permis de mettre en pratique des notions JavaScript afin de garder en mémoire des informations, de communiquer avec le clavier et l'utilisateur et de retourner des messages d'erreurs à celui ci. ",
         id: 5
     },
     {
@@ -138,10 +138,10 @@ const projectsList = [
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f42013608.png",
             "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f44311ded.png",
         ],
-        category: ['Javascript '],
+        category: ['Javascript', 'Css', 'Html'],
         keywords: ['Javascript', 'Html', 'Css'],
         devices: ['desktop'],
-        infos: "J'avais envie de mettre en pratique des notions de CSS et Javascript autour du scroll et de l'appartition des éléménts dans le Dom mais aussi de m'amuser avec le son et le clavier. Le projet propose donc à l'utilisateur de se plonger dans un univers sonore, en appuyant sur certaines touches du clavier, un son se fait entendre",
+        infos: "J'avais envie de mettre en pratique des notions de CSS et Javascript autour du scroll et de l'appartition des éléménts dans le DOM mais aussi de m'amuser avec le son et le clavier. Le projet propose donc à l'utilisateur de se plonger dans un univers sonore, en appuyant sur certaines touches du clavier, un son se fait entendre",
         id: 6
     },
 
@@ -158,7 +158,7 @@ const projectsList = [
         category: ['React', 'Cat Api', 'Css'],
         keywords: ['chats', 'cats', 'game', 'jeux'],
         devices: ['desktop'],
-        infos: "J'avais envie pour m'amuser de créer un mini site autour de trois API sur les chats. J'ai donc décider de crér une première page qui permette de faire apparaitre des gifs de chats à l'infinis en lui associant une phrase issue d'une autre Api.Puis de créer une page qui permette de rechercher des images de chats par catégories et de faire dire une chose à un chat. et enfin de faire un jeux  de chance basé sur l'aléatoire avec des photographies de chats, le 'Casino Cats' dont le but est de ne pas perdre ses crédits",
+        infos: "J'avais envie pour m'amuser en créant un mini site autour de trois API sur les chats. J'ai donc décidé de créer une première page qui permette de faire apparaitre des gifs de chats à l'infinis en lui associant une phrase issue d'une autre Api. Puis de créer une page qui permette de rechercher des images de chats par catégories et de faire dire une chose à un chat. Et enfin de faire un jeu aléatoire avec des photographies de chats, le 'Casino Cats' dont le but est trouver trois images similaires et de ne pas perdre ses crédits",
         id: 7
     },
     {
@@ -170,7 +170,7 @@ const projectsList = [
         category: ['Javascript', 'Html', 'Css'],
         keywords: ['javasript', 'jeux', 'game'],
         devices: ['Mobile', 'Desktop'],
-        infos: "Ce projet est né de l'envie de me familiariser avec des notions de Javascript Vanilla comme la selection d'éléments, des fonctions diverses liés au langage comme l'aléatoire etc ... C'est donc une copie du jeux 'Le Juste Prix' , l'idée est de trouver un prix compris entre 1 et 1000 pour un objet issue d'une liste que j'ai créé. Le prix d'un objet n'est jamais le même d'une partie à l'autre . ",
+        infos: "Ce projet est né de l'envie de me familiariser avec des notions de Javascript Vanilla comme la selection d'éléments, des fonctions diverses liés au langage comme les nombres aléatoires etc ... C'est donc une copie du jeux 'Le Juste Prix' , l'idée est de trouver un prix compris entre 1 et 1000 pour un objet issue d'une liste que j'ai créé. Le prix d'un objet n'est jamais le même d'une partie à l'autre . ",
         id: 8
     },
 
