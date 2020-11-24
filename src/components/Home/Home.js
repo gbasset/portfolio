@@ -147,7 +147,7 @@ export default function Home() {
                     <h2 >Bienvenue sur mon portfolio</h2>
                     <blockquote>
                         <p>
-                            “ Ce site recense quelques projets personnels que j'ai entreppris seul mais également avec d'autres developpeurs.Je vous invite donc à les parcourir sur la page " Mes projets" et à me faire vos retours si vous le souhaitez . ”
+                            `“ Ce site recense quelques projets personnels que j'ai entrepris seul mais également avec d'autres developpeurs. Je vous invite donc à les parcourir sur la page " Mes projets" et à me faire vos retours si vous le souhaitez . ”`
                 </p>
                     </blockquote>
                 </div>
