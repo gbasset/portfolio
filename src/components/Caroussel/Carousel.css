@@ -31,8 +31,13 @@
 .caroussel_item_left {
     width: 25%;
     display: flex;
+    flex-direction: column;
     margin: auto;
     align-items: center;
+}
+
+.icon_link {
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -40,16 +45,16 @@
     width: 50%;
     align-items: center;
     display: flex;
+    flex-direction: column;
     margin: auto 20px;
-    cursor: pointer;
 }
 
 .caroussel_item_right {
     width: 25%;
     align-items: center;
     display: flex;
+    flex-direction: column;
     margin: auto;
-    cursor: pointer;
 }
 
 .caroussel_picture_center_container {
@@ -60,6 +65,14 @@
     display: flex;
     /* flex-direction: column; */
     z-index: 999;
+}
+
+.caroussel_picture_container p:hover {
+    color: #ffcb84;
+}
+
+.caroussel_picture_center_container p:hover {
+    color: #ffcb84;
 }
 
 .caroussel_picture_container {

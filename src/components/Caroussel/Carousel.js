@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import './Carousel.css'
 export default function Carousel({ sortTheArrayOfPic, arrayOfPic, isChange, direction }) {
-
     console.log("arrayOfPic", arrayOfPic);
     return (
         <section className="carroussel_container">
@@ -19,10 +20,24 @@ export default function Carousel({ sortTheArrayOfPic, arrayOfPic, isChange, dire
                             backgroundRepeat: 'no-repeat'
                         }}
                     >
-                        <div><p>{arrayOfPic && arrayOfPic[0].label}</p> </div>
-
+                        <div><p>
+                            <i className="fas fa-link icon_link"></i>
+                            <Link className='lien'
+                                to={{
+                                    pathname: `projectItem`,
+                                    state: {
+                                        item: arrayOfPic && arrayOfPic[0]
+                                    }
+                                }}>
+                                {arrayOfPic && arrayOfPic[0].label}
+                            </Link>
+                        </p>
+                        </div>
                         {/* <img src={arrayOfPic && arrayOfPic[0].picture} alt="project pic" /> */}
                     </div>
+
+
+
                 </div>
                 <div className={!isChange ? "caroussel_item_center" : "caroussel_item_center "}>
                     <div className={direction == "left" ?
@@ -36,7 +51,19 @@ export default function Carousel({ sortTheArrayOfPic, arrayOfPic, isChange, dire
                             backgroundPosition: "50%"
                         }}
                     >
-                        <div> <p> {arrayOfPic && arrayOfPic[1].label}</p></div>
+                        <div><p>
+                            <i className="fas fa-link icon_link"></i>
+                            <Link className='lien'
+                                to={{
+                                    pathname: `projectItem`,
+                                    state: {
+                                        item: arrayOfPic && arrayOfPic[1]
+                                    }
+                                }}>
+                                {arrayOfPic && arrayOfPic[1].label}
+                            </Link>
+                        </p>
+                        </div>
                     </div>
                 </div >
                 <div className={!isChange ? "caroussel_item_right" : "caroussel_item_right "} >
@@ -52,7 +79,19 @@ export default function Carousel({ sortTheArrayOfPic, arrayOfPic, isChange, dire
 
                         }}
                     >
-                        <div><p>{arrayOfPic && arrayOfPic[2].label}</p></div>
+                        <div><p>
+                            <i className="fas fa-link icon_link"></i>
+                            <Link className='lien'
+                                to={{
+                                    pathname: `projectItem`,
+                                    state: {
+                                        item: arrayOfPic && arrayOfPic[2]
+                                    }
+                                }}>
+                                {arrayOfPic && arrayOfPic[2].label}
+                            </Link>
+                        </p>
+                        </div>
                     </div>
                 </div >
             </div >
@@ -66,6 +105,6 @@ export default function Carousel({ sortTheArrayOfPic, arrayOfPic, isChange, dire
                     <i className="fas fa-arrow-right"></i>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
