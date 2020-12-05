@@ -6,21 +6,79 @@ import catsCasino from './images/casinocats.PNG'
 import scrollexp from './images/scrollexp.PNG'
 import restaurant from './images/restaurant.PNG'
 
+
+import movie1 from './images/movie/01.PNG'
+import movie2 from './images/movie/pictureones.png'
+import movie3 from './images/movie/harryp.PNG'
+import movie4 from './images/movie/harryp2.PNG'
+import movie5 from './images/movie/harryp.PNG'
+import movie6 from './images/movie/titanic.PNG'
+
+import lily from './images/jelily/00.png'
+import lily1 from './images/jelily/01.png'
+import lily2 from './images/jelily/02.png'
+import lily3 from './images/jelily/03.png'
+import lily4 from './images/jelily/04.png'
+import lily5 from './images/jelily/05.png'
+
+import resto from './images/resto/00.png'
+import resto1 from './images/resto/01.png'
+import resto2 from './images/resto/02.png'
+import resto3 from './images/resto/03.png'
+import resto4 from './images/resto/04.png'
+import resto5 from './images/resto/05.PNG'
+
+import skills1 from './images/meetup/plancheSKILLS.jpg'
+import skills2 from './images/meetup/map.PNG'
+import skills3 from './images/meetup/mapfiltre.PNG'
+import skills4 from './images/meetup/mapfiltre2.PNG'
+import skills5 from './images/meetup/picturesignup.PNG'
+import skills6 from './images/meetup/param.PNG'
+
+import beer1 from './images/beer/01.PNG'
+import beer2 from './images/beer/02.PNG'
+import beer3 from './images/beer/03.PNG'
+import beer4 from './images/beer/04.PNG'
+import beer5 from './images/beer/05.PNG'
+import beer6 from './images/beer/06.PNG'
+
+import prix from './images/juste/01.PNG'
+import prix2 from './images/juste/02.PNG'
+import prix3 from './images/juste/03.PNG'
+
+import pendu from './images/pendu/game.png'
+import pendu1 from './images/pendu/home.PNG'
+import pendu2 from './images/pendu/win.png'
+import pendu3 from './images/pendu/loose.png'
+import pendu4 from './images/pendu/pictureones.png'
+
+import sound from './images/sound/01.PNG'
+import sound2 from './images/sound/foret.png'
+import sound3 from './images/sound/savane.png'
+import sound4 from './images/sound/pluie7.png'
+import sound5 from './images/sound/game.png'
+import sound6 from './images/sound/plagecitation.png'
+
+import cat from './images/cats/01.png'
+import cat2 from './images/cats/02.png'
+import cat3 from './images/cats/03.PNG'
+import cat4 from './images/cats/04.PNG'
+import cat5 from './images/cats/05.PNG'
+
 const projectsList = [
     {
         key: 'movie',
         label: 'movie project',
-        picture: "https://www.hebergeur-image.com/upload/91.160.248.248-5f48e990a7a08.png",
+        picture: movie1,
         link: 'https://moviesearchgaetan.netlify.app/',
         github: 'https://github.com/gbasset/search-movies',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48e990a7a08.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48d6321fd19.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48d6321e8ce.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48d632251c2.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48d63226f9f.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48d63225b3e.PNG",
-
+            movie1,
+            movie2,
+            movie3,
+            movie4,
+            movie5,
+            movie6,
         ],
         category: ['React', 'JavaScript', 'Css', ' Bootstrap'],
         keywords: ["movies", "cinema", "react"],
@@ -36,13 +94,12 @@ const projectsList = [
         picture: juleLily,
         github: 'https://github.com/gbasset/Paris-0919-P3-Jule-et-Lily',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f60feb90d.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f60fec3ca.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f60fecd3a.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f6275748c.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f6275864f.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f65ba2d08.png",
-
+            lily,
+            lily1,
+            lily2,
+            lily3,
+            lily4,
+            lily5
         ],
         category: ['React', 'NodeJs', 'Sql', 'JavaScript', 'Css'],
         keywords: ['wild code school', 'back office', 'projet commun'],
@@ -53,15 +110,16 @@ const projectsList = [
     {
         key: 'Restaurant',
         label: 'Restaurant',
-        picture: restaurant,
+        picture: resto,
         link: 'https://gbasset.github.io/ebanrestaurant/',
         github: 'https://github.com/gbasset/ebanrestaurant',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f4f20523b.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f4f205d44.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f4f210b7b.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f4f212b13.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f55133453.png",
+            resto,
+            resto1,
+            resto2,
+            resto3,
+            resto4,
+            resto5
         ],
         category: ['Html', 'Css', 'Javascript '],
         keywords: ['Javascript', 'Html', 'Css'],
@@ -72,16 +130,14 @@ const projectsList = [
     {
         key: 'Skills',
         label: 'Skills',
-        picture: "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f79cecb6e.jpg",
+        picture: skills1,
         link: '',
         github: 'https://github.com/gbasset/Skills-projet-2',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f79cecb6e.jpg",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f757cc162.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f7456cdf8.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f74569f7c.PNG",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f757cb889.PNG",
-
+            skills1,
+            skills3,
+            skills5,
+            skills6,
         ],
         category: ['React', 'NodeJs', 'JavaScript', 'Css', 'Leaflet', 'Mongo DB'],
         keywords: ['nodeJS', 'React'],
@@ -92,14 +148,16 @@ const projectsList = [
     {
         key: 'Beer Project',
         label: 'Beer Project',
-        picture: "https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8cd6e5ea7.PNG",
-        link: 'https://inbeerwetrust.netlify.app/#/',
+        picture: beer1,
+        link: 'https://inbeerwetrust.netlify.app/#/home',
         github: 'https://github.com/gbasset/beerProject',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2ce794.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2cf6ec.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2cfccf.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f9b2d51a1.png",
+            beer1,
+            beer2,
+            beer3,
+            beer4,
+            beer5,
+            beer6
         ],
         category: ['React', 'JavaScript', 'Css', 'Punk Api', 'LocalStorage'],
         keywords: ['shop', 'bière'],
@@ -110,14 +168,15 @@ const projectsList = [
     {
         key: 'game pendu',
         label: 'Jeux du pendu',
-        picture: 'https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8a76e4fd1.PNG',
+        picture: pendu4,
         link: 'https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8a76e4fd1.PNG',
         github: 'https://github.com/gbasset/jeux-du-pendu-js-Vanilla',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86da1ea.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86da9ee.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86de1ce.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48eb86de8e9.png",
+            pendu,
+            pendu1,
+            pendu2,
+            pendu3,
+            pendu4
         ],
         category: ['Javascript', 'Css', 'Html', 'Canvas'],
         keywords: ["jeux", "game"],
@@ -132,11 +191,12 @@ const projectsList = [
         link: 'https://gbasset.github.io/scrollSoundExperience/',
         github: 'https://github.com/gbasset/scrollSoundExperience',
         pictures: [
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f3a11ca60.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f3e7a16a0.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f3e7a399c.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f42013608.png",
-            "https://www.hebergeur-image.com/upload/91.160.248.248-5f48f44311ded.png",
+            sound,
+            sound2,
+            sound3,
+            sound4,
+            sound5,
+            sound6
         ],
         category: ['Javascript', 'Css', 'Html'],
         keywords: ['Javascript', 'Html', 'Css'],
@@ -148,12 +208,15 @@ const projectsList = [
     {
         key: 'Cats Project',
         label: 'Cats Project',
-        picture: "https://www.hebergeur-image.com/upload/176.175.139.191-5f4bd2e42f992.png",
+        picture: cat,
         link: 'https://gbasset.github.io/catsProjectReact/#/',
         github: 'https://github.com/gbasset/catsProjectReact',
         pictures: [
-            "https://www.hebergeur-image.com/upload/176.175.139.191-5f4bd2e42f992.png",
-            "https://www.hebergeur-image.com/upload/176.175.139.191-5f4bd2e4369eb.png",
+            cat,
+            cat2,
+            cat3,
+            cat4,
+            cat5
         ],
         category: ['React', 'Cat Api', 'Css'],
         keywords: ['chats', 'cats', 'game', 'jeux'],
@@ -165,7 +228,12 @@ const projectsList = [
         key: 'Le juste prix',
         label: 'Le juste prix',
         link: 'https://gbasset.github.io/JustPrice-Vanilla-Js/',
-        picture: 'https://www.hebergeur-image.com/upload/82.125.50.6-5fbd8d4e6b54e.PNG',
+        picture: prix,
+        pictures: [
+            prix,
+            prix2,
+            prix3
+        ],
         github: 'https://github.com/gbasset/JustPrice-Vanilla-Js',
         category: ['Javascript', 'Html', 'Css'],
         keywords: ['javasript', 'jeux', 'game'],

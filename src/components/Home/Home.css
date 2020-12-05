@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     background-color: #1f2235;
-    background: url("https://www.hebergeur-image.com/upload/91.160.248.248-5f48f8fbf3378.jpg");
+    background: url("../../Assets/images/nordwood-themes-kRNZiGKtz48-unsplash.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,7 +386,7 @@
         display: flex;
         height: 100vh;
         background-color: #1f2235;
-        background: url("https://www.hebergeur-image.com/upload/91.160.248.248-5f48f94bd8721.jpg");
+        background: url("../../Assets/images/imageedit_5_7822050368.jpg");
         background-position: 100% 47px;
         background-repeat: no-repeat;
         background-size: cover;
