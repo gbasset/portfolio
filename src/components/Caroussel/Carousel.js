@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import './Carousel.css'
 export default function Carousel({ sortTheArrayOfPic, arrayOfPic, isChange, direction }) {
-    console.log("arrayOfPic", arrayOfPic);
     return (
         <section className="carroussel_container">
             <h1>Mes projets</h1>

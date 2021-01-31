@@ -51,7 +51,6 @@ export default function Contacts() {
             'gmail', templateId,
             variables
         ).then(res => {
-            console.log('Email successfully sent!')
             setok(true)
             const action = () => {
                 setMsg('')
