@@ -12,12 +12,25 @@ import ProjectItem from './components/Projects/ProjectItem';
 import Footer from './components/Footer/Footer';
 import Contacts from './components/contact/Contacts';
 import ContextProvider from './Context/Context'
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 function App() {
 
+  const history = createBrowserHistory();
+  useEffect(() => {
+    if (history) {
+      // Initialize google analytics page view tracking
+      history.listen(location => {
+        ReactGA.set({ page: location.pathname }); // Update the user's current page
+        ReactGA.pageview(location.pathname); // Record a pageview for the given page
+      });
+
+    }
+  })
   return (
 
     <ContextProvider >
-      < Router
+      < Router history={history}
       // forceRefresh={true}
       >
         <Header />
