@@ -17,7 +17,7 @@ import { createBrowserHistory } from 'history';
 function App() {
 
   const history = useHistory();
-  ReactGA.initialize('G-48VZYNVF5T');
+  ReactGA.initialize('UA-188914903-1');
 
   return (
 
