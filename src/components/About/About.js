@@ -1,13 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import udemy from "../../Assets/logos/udemy_logo_icon_144775.png"
 import openClassroom from "../../Assets/logos/Logo_OpenClassrooms.png"
 import netifly from "../../Assets/logos/iconfinder_netlify_4691413.png"
 import pdf from "../../Assets/gaetancv.pdf"
 import './About.css'
+import { Context } from '../../Context/Context'
 export default function About() {
+    const {
+        setLocationUrl
+    } = useContext(Context)
     useEffect(() => {
         document.documentElement.scrollTop = 0
+        setLocationUrl(window.location.href)
     }, [])
+
     return (
         <div className="containerHight">
             {/* <div className="construction">

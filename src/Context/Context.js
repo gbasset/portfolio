@@ -10,7 +10,6 @@ const ContextProvider = (props) => {
 
     return (
         <Context.Provider value={{
-
             locationUrl,
             setLocationUrl
         }}>

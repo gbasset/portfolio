@@ -2,13 +2,16 @@ import React, { useEffect, useState, useContext } from 'react'
 import './Footer.css'
 import { Link, useHistory } from 'react-router-dom'
 import { Context } from '../../Context/Context'
+import ReactGA from 'react-ga';
 export default function Footer({ match }) {
     const {
         locationUrl
     } = useContext(Context)
     const [isHome, SetIsHome] = useState(false)
     const history = useHistory()
+
     useEffect(() => {
+        ReactGA.pageview(history.location.pathname + history.location.search)
         if (locationUrl && locationUrl.includes('/Home')) {
             SetIsHome(true)
         }
